@@ -6,7 +6,7 @@ import Proj1 from "./pages/projects/Dropout.vue";
 const routes = [
   { path: "/", name: "Portfolio", component: PortfolioPage },
   { path: "/about", name: "About", component: AboutPage },
-  { path: "/portfolio/project1", name: "proj1", component: Proj1 },
+  { path: "/portfolio/1", name: "proj1", component: Proj1 },
 ];
 
 const router = createRouter({
