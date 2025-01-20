@@ -1,9 +1,11 @@
 <template>
-  <button @click="goToLink('mailto:your_email@example.com')">Email Me</button>
-  <button @click="goToLink('https://www.linkedin.com/in/yourprofile')">
-    LinkedIn
-  </button>
-  <button @click="goToLink('https://github.com/yourgithub')">GitHub</button>
+  <div class="contact-buttons">
+    <button @click="goToLink('mailto:your_email@example.com')"></button>
+    <button
+      @click="goToLink('https://www.linkedin.com/in/yourprofile')"
+    ></button>
+    <button @click="goToLink('https://github.com/yourgithub')"></button>
+  </div>
 </template>
 
 <script>
@@ -16,18 +18,24 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
 button {
-  background-color: #443f3f;
-  color: white;
-  border: none;
-  padding: 10px 15px;
+  background-color: #ffffff;
+  border: 2px solid #2e2a28;
+  padding: 10px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #777;
+  background-color: #ffe4cf;
+  transform: scale(1.05);
 }
 </style>

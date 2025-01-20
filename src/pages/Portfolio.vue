@@ -3,15 +3,34 @@
     <Heya />
   </div>
 
-  <div class="filter-buttons">
-    <button @click="filterProjects('all')">All</button>
-    <button @click="filterProjects('web')">Web</button>
-    <button @click="filterProjects('mobile')">Mobile</button>
-    <button @click="filterProjects('design')">Design</button>
-  </div>
-
   <div class="portfolio-page">
-    <h1>My Projects</h1>
+    <div class="filter-buttons">
+      <button
+        :class="{ active: selectedCategory === 'Game Development' }"
+        @click="filterProjects('Game Development')"
+      >
+        Game Development
+      </button>
+      <button
+        :class="{ active: selectedCategory === 'UI/UX Design' }"
+        @click="filterProjects('UI/UX Design')"
+      >
+        UI/UX Design
+      </button>
+      <button
+        :class="{ active: selectedCategory === 'Illustrations & Animation' }"
+        @click="filterProjects('Illustrations & Animation')"
+      >
+        Illustrations & Animation
+      </button>
+      <!-- <button
+        :class="{ active: selectedCategory === 'Tech Art' }"
+        @click="filterProjects('Tech Art')"
+      >
+        Tech Art
+      </button> -->
+      <button @click="filterProjects('all')">X</button>
+    </div>
     <div class="project-grid">
       <ProjectCard
         v-for="project in filteredProjects"
@@ -19,6 +38,7 @@
         :title="project.title"
         :image="project.image"
         :projectId="project.id"
+        :category="project.category"
       />
     </div>
   </div>
@@ -33,32 +53,55 @@ export default {
   data() {
     return {
       // List of all projects with their categories
+      selectedCategory: "all",
       projects: [
-        { id: 1, title: "Project 1", category: "web", image: "me.png" },
         {
-          id: 2,
-          title: "Project 2",
-          category: "mobile",
-          image: "project2.png",
+          id: "glompa",
+          title: "Recoded, Singapore",
+          category: "Game Development",
+          image: "/assets/me.png",
         },
         {
-          id: 3,
-          title: "Project 3",
-          category: "design",
-          image: "project3.png",
-        },
-        { id: 4, title: "Project 4", category: "web", image: "project4.png" },
-        {
-          id: 5,
-          title: "Project 5",
-          category: "mobile",
-          image: "project5.png",
+          id: "tdp",
+          title: "The Doodle People, Singapore",
+          category: "Game Development",
+          image: "/assets/me.png",
         },
         {
-          id: 6,
-          title: "Project 6",
-          category: "design",
-          image: "project6.png",
+          id: "sph",
+          title: "SPH Media, Singapore",
+          category: "Illustrations & Animation",
+          image: "/assets/me.png",
+        },
+        {
+          id: "stickem",
+          title: "Stick 'Em Dojo",
+          category: "UI/UX Design",
+          image: "/assets/me.png",
+        },
+        {
+          id: "dropout",
+          title: "Dimension 20 Animated",
+          category: "Illustrations & Animation",
+          image: "/assets/me.png",
+        },
+        {
+          id: "trekalert",
+          title: "TrekAlert",
+          category: "UI/UX Design",
+          image: "/assets/me.png",
+        },
+        {
+          id: "horrorescape",
+          title: "Deep Space Breach",
+          category: "Game Development",
+          image: "/assets/me.png",
+        },
+        {
+          id: "freelance",
+          title: "Freelance Illustrations",
+          category: "Illustrations & Animation",
+          image: "/assets/me.png",
         },
       ],
       filteredProjects: [],
@@ -70,7 +113,7 @@ export default {
   },
   methods: {
     filterProjects(category) {
-      console.log(`Filtering projects by category: ${category}`);
+      this.selectedCategory = category;
       // Filter projects by category
       if (category === "all") {
         this.filteredProjects = this.projects; // Show all projects
@@ -84,11 +127,52 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+@font-face {
+  font-family: "InstrumentSans-Reg";
+  src: local("InstrumentSans-Reg"),
+    url("../fonts/InstrumentSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .project-grid {
   display: grid;
-  padding: 50px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5px;
+  row-gap: 80px;
+  justify-items: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.filter-buttons button {
+  font-family: "InstrumentSans-Reg";
+  font-size: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #2e2a28;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.filter-buttons button.active {
+  background-color: #ffefcf;
+  border: 2px solid #2e2a28;
+  font-weight: bold;
 }
 </style>

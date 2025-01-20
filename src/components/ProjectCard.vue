@@ -1,7 +1,12 @@
 <template>
   <div class="project-card" @click="goToProjectPage">
-    <img :src="image" :alt="title" class="project-image" />
-    <h3 class="project-title">{{ title }}</h3>
+    <div>
+      <img :src="image" :alt="title" class="project-image" />
+    </div>
+    <div class="project-info">
+      <h3 class="project-title">{{ title }}</h3>
+      <div class="project-category">{{ category }}</div>
+    </div>
   </div>
 </template>
 
@@ -10,6 +15,7 @@ export default {
   props: {
     title: { type: String, required: true },
     image: { type: String, required: true },
+    category: { type: String, required: true },
     projectId: { type: String, required: true },
   },
   methods: {
@@ -20,25 +26,53 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+@font-face {
+  font-family: "InstrumentSans-Med";
+  src: local("InstrumentSans-Med"),
+    url("../fonts/InstrumentSans-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InstrumentSans-Reg";
+  src: local("InstrumentSans-Reg"),
+    url("../fonts/InstrumentSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .project-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  text-align: center;
+  display: flex;
+  flex-direction: column; /* Ensures the image and text are stacked vertically */
+  align-items: left; /* Center the content horizontally */
+  width: 550px; /* Adjust width as needed */
+  height: 380px;
+
   cursor: pointer;
-  transition: box-shadow 0.2s ease-in-out;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 .project-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
 }
 .project-image {
-  max-width: 100%;
-  border-radius: 4px;
+  width: 550px;
+  height: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  background-color: blue;
 }
+
 .project-title {
+  font-family: "InstrumentSans-Med";
   margin-top: 12px;
+  margin-bottom: 2px;
   font-size: 1.2rem;
-  font-weight: bold;
+}
+.project-category {
+  font-family: "InstrumentSans-Reg";
+  font-size: 1rem;
 }
 </style>

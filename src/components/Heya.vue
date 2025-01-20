@@ -2,7 +2,10 @@
   <div class="landing-page">
     <div class="avatar-container">
       <div class="speech-bubble">
-        <p>Welcome to my portfolio!</p>
+        <div class="intro">
+          <h2>Heya, I'm Yu Xiang!</h2>
+          <p>Game Development | UI/UX Design | Illustrations</p>
+        </div>
       </div>
       <img src="/assets/me.png" alt="Avatar" class="avatar" />
     </div>
@@ -16,53 +19,92 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "InstrumentSans-Reg";
+  src: local("InstrumentSans-Reg"),
+    url("../fonts/InstrumentSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Overall landing page layout */
 .landing-page {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 60vh;
+  margin-top: 80px;
 }
 
+/* Container for avatar and speech bubble */
 .avatar-container {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
+/* Avatar image styling */
 .avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 800px; /* Adjusted to a reasonable size for avatars */
+  height: 300px;
+  object-fit: contain;
 }
 
+/* Speech bubble styling */
 .speech-bubble {
   position: absolute;
-  top: -30px; /* Adjust position of speech bubble above avatar */
-  left: 100%;
-  margin-left: 10px;
-  padding: 10px;
-  background-color: #f39c12;
-  color: white;
-  border-radius: 10px;
-  max-width: 200px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 1.2rem;
-  font-family: Arial, sans-serif;
+  top: -110px;
+  left: -10%;
+  width: 600px;
+  height: 150px;
+  background-image: url("/assets/speech-bubble.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
-.speech-bubble::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 10px;
-  border-style: solid;
-  border-color: #f39c12 transparent transparent transparent;
+/* Text inside the speech bubble */
+.intro {
+  font-size: 1.2rem;
+  padding-bottom: 45px;
+  font-family: "InstrumentSans-Reg";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2e2a28;
+}
+
+.intro h2 {
+  margin: 0 0 10px 0;
+}
+
+.intro p {
+  margin: 0;
+}
+
+.speech-bubble:hover {
+  animation: wiggle 0.5s ease-in-out infinite;
+}
+
+/* Keyframes for the wiggle effect */
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0.5deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  75% {
+    transform: rotate(0.5deg);
+  }
 }
 </style>
