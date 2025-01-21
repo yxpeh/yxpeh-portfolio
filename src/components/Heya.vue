@@ -4,7 +4,10 @@
       <div class="speech-bubble">
         <div class="intro">
           <h2>Heya, I'm Yu Xiang!</h2>
-          <p>Game Development | UI/UX Design | Illustrations</p>
+          <p>
+            UI/UX Design&nbsp;&nbsp;|&nbsp;&nbsp;Game
+            Development&nbsp;&nbsp;|&nbsp;&nbsp;Illustrations
+          </p>
         </div>
       </div>
       <img src="/assets/me.png" alt="Avatar" class="avatar" />
@@ -18,7 +21,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @font-face {
   font-family: "InstrumentSans-Reg";
   src: local("InstrumentSans-Reg"),
@@ -44,7 +47,7 @@ export default {
 
 /* Avatar image styling */
 .avatar {
-  width: 800px; /* Adjusted to a reasonable size for avatars */
+  width: 1120px;
   height: 300px;
   object-fit: contain;
 }
@@ -53,7 +56,7 @@ export default {
 .speech-bubble {
   position: absolute;
   top: -110px;
-  left: -10%;
+  left: 8%;
   width: 600px;
   height: 150px;
   background-image: url("/assets/speech-bubble.svg");
@@ -69,7 +72,8 @@ export default {
 
 /* Text inside the speech bubble */
 .intro {
-  font-size: 1.2rem;
+  -webkit-nbsp-mode: true;
+  font-size: 1.1rem;
   padding-bottom: 45px;
   font-family: "InstrumentSans-Reg";
   display: flex;

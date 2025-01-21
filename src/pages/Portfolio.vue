@@ -4,19 +4,21 @@
   </div>
 
   <div class="portfolio-page">
+    <ClickCategory :activeCategory="selectedCategory" />
     <div class="filter-buttons">
-      <button
-        :class="{ active: selectedCategory === 'Game Development' }"
-        @click="filterProjects('Game Development')"
-      >
-        Game Development
-      </button>
       <button
         :class="{ active: selectedCategory === 'UI/UX Design' }"
         @click="filterProjects('UI/UX Design')"
       >
         UI/UX Design
       </button>
+      <button
+        :class="{ active: selectedCategory === 'Game Development' }"
+        @click="filterProjects('Game Development')"
+      >
+        Game Development
+      </button>
+
       <button
         :class="{ active: selectedCategory === 'Illustrations & Animation' }"
         @click="filterProjects('Illustrations & Animation')"
@@ -46,10 +48,11 @@
 
 <script>
 import Heya from "../components/Heya.vue";
+import ClickCategory from "../components/ClickCategory.vue";
 import ProjectCard from "../components/ProjectCard.vue";
 
 export default {
-  components: { Heya, ProjectCard },
+  components: { Heya, ClickCategory, ProjectCard },
   data() {
     return {
       // List of all projects with their categories
@@ -58,7 +61,7 @@ export default {
         {
           id: "glompa",
           title: "Recoded, Singapore",
-          category: "Game Development",
+          category: "UI/UX Design",
           image: "/assets/me.png",
         },
         {
@@ -100,6 +103,12 @@ export default {
         {
           id: "freelance",
           title: "Freelance Illustrations",
+          category: "Illustrations & Animation",
+          image: "/assets/me.png",
+        },
+        {
+          id: "freelance",
+          title: "Youtube Storyboards",
           category: "Illustrations & Animation",
           image: "/assets/me.png",
         },

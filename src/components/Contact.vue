@@ -35,7 +35,7 @@ button {
 }
 
 button:hover {
-  background-color: #ffe4cf;
+  background-color: #f0f0f0;
   transform: scale(1.05);
 }
 </style>
