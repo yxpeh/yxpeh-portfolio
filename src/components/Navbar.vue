@@ -2,7 +2,13 @@
   <nav class="navbar">
     <router-link to="/" class="nav-link">Portfolio</router-link>
     <router-link to="/about" class="nav-link">About</router-link>
-    <router-link to="/cv" class="nav-link">CV</router-link>
+    <a
+      href="https://your-external-link.com"
+      class="nav-link"
+      target="_blank"
+      rel="noopener noreferrer"
+      >CV</a
+    >
   </nav>
 </template>
 
@@ -28,17 +34,15 @@ export default {
   gap: 20px;
 }
 
-/* Default link style */
 .nav-link {
   font-family: "InstrumentSans-Med";
   position: relative;
   color: black;
   margin-right: 15px;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
-/* Hover effect: Orange line under text */
 .nav-link::after {
   content: "";
   position: absolute;
@@ -54,12 +58,10 @@ export default {
   width: 100%;
 }
 
-/* Active state: Orange line stays */
 .router-link-active::after {
   width: 100%;
 }
 
-/* Remove text underline on hover */
 .nav-link:hover {
   text-decoration: none;
 }

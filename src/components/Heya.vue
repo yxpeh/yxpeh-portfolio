@@ -30,7 +30,6 @@ export default {
   font-style: normal;
 }
 
-/* Overall landing page layout */
 .landing-page {
   display: flex;
   justify-content: center;
@@ -39,26 +38,23 @@ export default {
   margin-top: 80px;
 }
 
-/* Container for avatar and speech bubble */
 .avatar-container {
   position: relative;
   display: flex;
 }
 
-/* Avatar image styling */
 .avatar {
   width: 1120px;
   height: 300px;
   object-fit: contain;
 }
 
-/* Speech bubble styling */
 .speech-bubble {
   position: absolute;
-  top: -110px;
+  top: -120px;
   left: 8%;
   width: 600px;
-  height: 150px;
+  height: 170px;
   background-image: url("/assets/speech-bubble.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -70,11 +66,9 @@ export default {
   padding: 20px;
 }
 
-/* Text inside the speech bubble */
 .intro {
-  -webkit-nbsp-mode: true;
-  font-size: 1.1rem;
-  padding-bottom: 45px;
+  font-size: 1.25rem;
+  padding-bottom: 50px;
   font-family: "InstrumentSans-Reg";
   display: flex;
   flex-direction: column;

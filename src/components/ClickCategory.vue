@@ -1,9 +1,9 @@
 <template>
   <div class="click-category">
-    <div class="header">
+    <div class="avatar">
       <img :src="currentAvatar" alt="Avatar" class="avatar-icon" />
       <div class="speech-bubble">
-        <p class="instructions">
+        <p class="speech">
           Here are the types of stuff I love doing. <br />If you only wanna see
           projects from a certain category, click on a bubble!
         </p>
@@ -24,10 +24,10 @@ export default {
   computed: {
     currentAvatar() {
       const avatars = {
-        all: "/assets/categories/all.PNG",
-        "Game Development": "/assets/categories/gamedev-avatar.jpg",
-        "Illustrations & Animation": "/assets/categories/art-avatar.jpg",
-        "UI/UX Design": "/assets/categories/uiux-avatar.PNG",
+        all: "/assets/categories/all.png",
+        "Game Development": "/assets/categories/gamedev-avatar.png",
+        "Illustrations & Animation": "/assets/categories/art-avatar.png",
+        "UI/UX Design": "/assets/categories/uiux-avatar.png",
       };
       return avatars[this.activeCategory] || avatars.all;
     },
@@ -52,7 +52,7 @@ export default {
   margin-bottom: 20px;
 }
 
-.header {
+.avatar {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -72,7 +72,7 @@ export default {
   background-position: center;
 }
 
-.instructions {
+.speech {
   text-align: center;
   font-family: "InstrumentSans-Reg";
   margin-top: 43px;

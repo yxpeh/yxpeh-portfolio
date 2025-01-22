@@ -149,7 +149,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 5px;
-  row-gap: 80px;
+  row-gap: 65px;
   justify-items: center;
   align-items: center;
   width: 80%;
@@ -171,7 +171,7 @@ export default {
   padding: 10px 20px;
   margin: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
 }
 
 .filter-buttons button:hover {

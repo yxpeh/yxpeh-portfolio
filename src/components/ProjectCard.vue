@@ -45,9 +45,9 @@ export default {
 
 .project-card {
   display: flex;
-  flex-direction: column; /* Ensures the image and text are stacked vertically */
-  align-items: left; /* Center the content horizontally */
-  width: 550px; /* Adjust width as needed */
+  flex-direction: column;
+  align-items: left;
+  width: 550px;
   height: 380px;
 
   cursor: pointer;
@@ -62,7 +62,7 @@ export default {
   height: 300px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
-  background-color: blue;
+  background-color: orange;
 }
 
 .project-title {
