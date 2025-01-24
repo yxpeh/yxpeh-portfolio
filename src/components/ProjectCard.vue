@@ -13,7 +13,7 @@
       <p class="summary">
         {{ summary }}
       </p>
-      <button class="see-more" @click="goToProjectPage">View Case Study</button>
+      <button class="see-more" @click="goToProjectPage">Find out more</button>
     </div>
   </div>
 </template>
@@ -60,7 +60,7 @@ export default {
   width: 880px;
   height: 500px;
   background-color: rgb(254, 252, 248);
-  border: 2px solid #ede9e7;
+  border: 2px solid #f0e7da;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
@@ -123,13 +123,16 @@ export default {
 }
 .summary {
   position: absolute;
-  top: 45%;
+  top: 40%;
+  left: 7%;
   height: 125px;
   justify-content: center;
   align-items: center;
   font-family: "InstrumentSans-Reg";
-  font-size: 1rem;
-  text-align: center;
+  font-size: 0.9rem;
+  padding: 20px;
+  text-align: left;
+  line-height: 2;
 }
 
 button {

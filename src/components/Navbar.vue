@@ -3,7 +3,7 @@
     <router-link to="/" class="nav-link">Home</router-link>
     <router-link to="/about" class="nav-link">About</router-link>
     <a
-      href="https://your-external-link.com"
+      href="https://drive.google.com/file/d/15taIhw4MKGih2WfXMtUhbmu842UAjO1a/view?usp=sharing"
       class="nav-link"
       target="_blank"
       rel="noopener noreferrer"

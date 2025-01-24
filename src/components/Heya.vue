@@ -67,7 +67,7 @@ export default {
 }
 
 .intro {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   padding-bottom: 50px;
   font-family: "InstrumentSans-Reg";
   display: flex;
@@ -83,6 +83,7 @@ export default {
 
 .intro p {
   margin: 0;
+  font-size: 0.9rem;
 }
 
 .speech-bubble:hover {

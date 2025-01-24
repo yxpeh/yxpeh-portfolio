@@ -9,7 +9,7 @@
       @category-selected="filterProjects"
     />
     <div class="projects">
-      <button class="nav-button left" @click="prevCard">◀</button>
+      <button class="nav-button" @click="prevCard">◀</button>
 
       <div class="gallery">
         <div class="wrapper">
@@ -25,7 +25,7 @@
           />
         </div>
       </div>
-      <button class="nav-button right" @click="nextCard">▶</button>
+      <button class="nav-button" @click="nextCard">▶</button>
     </div>
   </div>
 </template>
@@ -46,43 +46,49 @@ export default {
           id: "glompa",
           title: "Recoded, Singapore",
           category: "Game Development",
-          image: "/assets/me.png",
-          summary: "placeholder placeholder placeholder",
+          image: "/assets/glompa/thumbnail.png",
+          summary:
+            "As a Game Designer Intern, I had the chance to design features like tournament systems, user profiles, and exciting new levels for Glompa!",
         },
         {
           id: "tdp",
           title: "The Doodle People, Singapore",
           category: "Game Development",
           image: "/assets/tdp/thumbnail.png",
-          summary: "placeholder placeholder placeholder",
+          summary:
+            "This internship allowed me to explore technical art, graphics programming, and bring VR experiences and interactive exhibits to life!",
         },
         {
           id: "sph",
           title: "SPH Media, Singapore",
           category: "Illustrations & Animation",
-          image: "/assets/me.png",
-          summary: "placeholder placeholder placeholder",
+          image: "/assets/sph/thumbnail.png",
+          summary:
+            "As a Graphic Designer intern, I helped create rotater thumnails, infographics, illustrations, and even published my very own comic strip!",
         },
         {
           id: "stickem",
-          title: "Stick 'Em Dojo",
+          title: "Stick 'Em, Singapore",
           category: "UI/UX Design",
-          image: "/assets/me.png",
-          summary: "placeholder placeholder placeholder",
+          image: "/assets/stickem/thumbnail.png",
+          summary:
+            "We created Stick 'Em Dojo' to make learning fun and self-directed, designed to work alongside Stick 'Em's STEAM education kits!",
         },
         {
           id: "dropout",
           title: "Dimension 20 Animated",
           category: "Illustrations & Animation",
           image: "/assets/dropout/thumbnail.png",
-          summary: "placeholder placeholder placeholder",
+          summary:
+            "What began as a fan animation grew into the opportunity to create an official clip for Dropout's Dimension 20 Animated Series!",
         },
         {
           id: "trekalert",
           title: "TrekAlert",
           category: "UI/UX Design",
-          image: "/assets/me.png",
-          summary: "placeholder placeholder placeholder",
+          image: "/assets/trekalert/thumbnail.png",
+          summary:
+            "A project dedicated to helping hikers stay safe and informed with timely alerts about trail conditions, weather, and more!",
         },
         // {
         //   id: "horrorescape",
@@ -95,7 +101,8 @@ export default {
           title: "Freelance Illustrations",
           category: "Illustrations & Animation",
           image: "/assets/freelance/thumbnail.png",
-          summary: "placeholder placeholder placeholder",
+          summary:
+            "I help my clients illustrate characters, posters, concept art, animatics, or whatever helps them bring their story to life!",
         },
       ],
       filteredProjects: [],
@@ -174,7 +181,7 @@ export default {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: rotateZ(-2.5deg) translate(-50%, -50%);
   z-index: 3;
 }
 
@@ -194,5 +201,24 @@ export default {
   transform: rotateY(-60deg) translate(-40%, -50%) scale(0.9); /* Slightly less rotation */
   transition: transform 0.6s ease, z-index 0.6s ease;
   z-index: 2;
+}
+
+.nav-button {
+  font-family: "InstrumentSans-Reg";
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #ada39e;
+  border: 1px solid #c9c2bf;
+  border-radius: 50%;
+  padding: 15px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+}
+
+.nav-button:hover {
+  background-color: #f0f0f0;
+  color: #57514e;
+  transform: scale(1.1);
 }
 </style>

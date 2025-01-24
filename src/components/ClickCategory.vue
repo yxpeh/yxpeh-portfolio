@@ -102,6 +102,7 @@ export default {
 .avatar-icon {
   width: 200px;
   height: 250px;
+  border-bottom-left-radius: 60px;
   object-fit: contain;
 }
 .speech-bubble {
@@ -149,10 +150,10 @@ export default {
   border: 2px solid #2e2a28;
   font-weight: bold;
 }
-.line {
+/* .line {
   width: 75%;
-  height: 3px;
+  height: 2px;
   background-color: #f39c12;
   margin: 0 auto;
-}
+} */
 </style>

@@ -46,7 +46,7 @@ export default {
 
 <style scoped>
 .footer {
-  margin: 40px 0 20px 0;
+  margin: 100px 0 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
