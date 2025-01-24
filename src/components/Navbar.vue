@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar">
-    <router-link to="/" class="nav-link">Portfolio</router-link>
+    <router-link to="/" class="nav-link">Home</router-link>
     <router-link to="/about" class="nav-link">About</router-link>
     <a
       href="https://your-external-link.com"

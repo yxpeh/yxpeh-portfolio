@@ -4,44 +4,27 @@
   </div>
 
   <div class="portfolio-page">
-    <ClickCategory :activeCategory="selectedCategory" />
-    <div class="filter-buttons">
-      <button
-        :class="{ active: selectedCategory === 'UI/UX Design' }"
-        @click="filterProjects('UI/UX Design')"
-      >
-        UI/UX Design
-      </button>
-      <button
-        :class="{ active: selectedCategory === 'Game Development' }"
-        @click="filterProjects('Game Development')"
-      >
-        Game Development
-      </button>
+    <ClickCategory
+      :activeCategory="selectedCategory"
+      @category-selected="filterProjects"
+    />
+    <div class="projects">
+      <button class="nav-button left" @click="prevCard">◀</button>
 
-      <button
-        :class="{ active: selectedCategory === 'Illustrations & Animation' }"
-        @click="filterProjects('Illustrations & Animation')"
-      >
-        Illustrations & Animation
-      </button>
-      <!-- <button
-        :class="{ active: selectedCategory === 'Tech Art' }"
-        @click="filterProjects('Tech Art')"
-      >
-        Tech Art
-      </button> -->
-      <button @click="filterProjects('all')">X</button>
-    </div>
-    <div class="project-grid">
-      <ProjectCard
-        v-for="project in filteredProjects"
-        :key="project.id"
-        :title="project.title"
-        :image="project.image"
-        :projectId="project.id"
-        :category="project.category"
-      />
+      <div class="gallery">
+        <div class="wrapper">
+          <ProjectCard
+            v-for="(currentProject, index) in filteredProjects"
+            :key="currentProject.id"
+            :title="currentProject.title"
+            :image="currentProject.image"
+            :projectId="currentProject.id"
+            :category="currentProject.category"
+            :class="getCardClass(index)"
+          />
+        </div>
+      </div>
+      <button class="nav-button right" @click="nextCard">▶</button>
     </div>
   </div>
 </template>
@@ -55,20 +38,20 @@ export default {
   components: { Heya, ClickCategory, ProjectCard },
   data() {
     return {
-      // List of all projects with their categories
       selectedCategory: "all",
+      activeIndex: 0,
       projects: [
         {
           id: "glompa",
           title: "Recoded, Singapore",
-          category: "UI/UX Design",
+          category: "Game Development",
           image: "/assets/me.png",
         },
         {
           id: "tdp",
           title: "The Doodle People, Singapore",
           category: "Game Development",
-          image: "/assets/me.png",
+          image: "/assets/tdp/thumbnail.png",
         },
         {
           id: "sph",
@@ -86,7 +69,7 @@ export default {
           id: "dropout",
           title: "Dimension 20 Animated",
           category: "Illustrations & Animation",
-          image: "/assets/me.png",
+          image: "/assets/dropout/thumbnail.png",
         },
         {
           id: "trekalert",
@@ -94,34 +77,33 @@ export default {
           category: "UI/UX Design",
           image: "/assets/me.png",
         },
-        {
-          id: "horrorescape",
-          title: "Deep Space Breach",
-          category: "Game Development",
-          image: "/assets/me.png",
-        },
-        {
-          id: "freelance",
-          title: "Freelance Illustrations",
-          category: "Illustrations & Animation",
-          image: "/assets/me.png",
-        },
+        // {
+        //   id: "horrorescape",
+        //   title: "Deep Space Breach",
+        //   category: "Game Development",
+        //   image: "/assets/horrorescape/thumbnail.png",
+        // },
         {
           id: "freelance",
-          title: "Youtube Storyboards",
+          title: "Freelance Illustrations & Storyboards",
           category: "Illustrations & Animation",
-          image: "/assets/me.png",
+          image: "/assets/freelance/thumbnail.png",
         },
       ],
       filteredProjects: [],
     };
   },
+  computed: {
+    currentProject() {
+      return this.filteredProjects[this.activeIndex];
+    },
+  },
   mounted() {
-    // Set filteredProjects to display all projects by default
     this.filteredProjects = this.projects;
   },
   methods: {
     filterProjects(category) {
+      this.activeIndex = 0;
       this.selectedCategory = category;
       // Filter projects by category
       if (category === "all") {
@@ -129,8 +111,21 @@ export default {
       } else {
         this.filteredProjects = this.projects.filter(
           (project) => project.category === category
-        ); // Filter by category
+        );
       }
+    },
+    nextCard() {
+      this.activeIndex = (this.activeIndex + 1) % this.filteredProjects.length;
+    },
+    prevCard() {
+      this.activeIndex =
+        (this.activeIndex - 1 + this.filteredProjects.length) %
+        this.filteredProjects.length;
+    },
+    getCardClass(index) {
+      if (index === this.activeIndex) return "active";
+      if (index < this.activeIndex) return "left-stack";
+      return "right-stack";
     },
   },
 };
@@ -144,44 +139,52 @@ export default {
   font-weight: normal;
   font-style: normal;
 }
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 5px;
-  row-gap: 65px;
-  justify-items: center;
+.projects {
+  width: 75%;
+  display: flex;
   align-items: center;
-  width: 80%;
   margin: auto;
 }
-.filter-buttons {
+.gallery {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  margin-bottom: 50px;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  perspective: 1000px;
+  margin-top: 20px;
 }
 
-.filter-buttons button {
-  font-family: "InstrumentSans-Reg";
-  font-size: 1rem;
-  background-color: #ffffff;
-  border: 1px solid #2e2a28;
-  border-radius: 30px;
-  padding: 10px 20px;
-  margin: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 500px;
 }
 
-.filter-buttons button:hover {
-  background-color: #f0f0f0;
-  transform: scale(1.05);
+.wrapper > .active {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
-.filter-buttons button.active {
-  background-color: #ffefcf;
-  border: 2px solid #2e2a28;
-  font-weight: bold;
+.wrapper > .left-stack {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotateY(60deg) translate(-55%, -50%) scale(0.9); /* Slightly less rotation */
+  transition: transform 0.6s ease, z-index 0.6s ease;
+  z-index: 2;
+}
+
+.wrapper > .right-stack {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotateY(-60deg) translate(-40%, -50%) scale(0.9); /* Slightly less rotation */
+  transition: transform 0.6s ease, z-index 0.6s ease;
+  z-index: 2;
 }
 </style>

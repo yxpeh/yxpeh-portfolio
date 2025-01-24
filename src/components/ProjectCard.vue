@@ -47,9 +47,10 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: left;
-  width: 550px;
-  height: 380px;
-
+  width: 880px;
+  height: 500px;
+  background-color: white;
+  border: 2px solid #2e2a28;
   cursor: pointer;
   overflow: hidden;
   transition: transform 0.3s ease;

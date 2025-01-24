@@ -105,7 +105,7 @@ button:hover {
 }
 .line {
   justify-content: center;
-  width: 80%;
+  width: 75%;
   height: 3px;
   background-color: #f39c12;
 }
