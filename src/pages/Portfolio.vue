@@ -19,6 +19,7 @@
             :title="currentProject.title"
             :image="currentProject.image"
             :projectId="currentProject.id"
+            :summary="currentProject.summary"
             :category="currentProject.category"
             :class="getCardClass(index)"
           />
@@ -46,36 +47,42 @@ export default {
           title: "Recoded, Singapore",
           category: "Game Development",
           image: "/assets/me.png",
+          summary: "placeholder placeholder placeholder",
         },
         {
           id: "tdp",
           title: "The Doodle People, Singapore",
           category: "Game Development",
           image: "/assets/tdp/thumbnail.png",
+          summary: "placeholder placeholder placeholder",
         },
         {
           id: "sph",
           title: "SPH Media, Singapore",
           category: "Illustrations & Animation",
           image: "/assets/me.png",
+          summary: "placeholder placeholder placeholder",
         },
         {
           id: "stickem",
           title: "Stick 'Em Dojo",
           category: "UI/UX Design",
           image: "/assets/me.png",
+          summary: "placeholder placeholder placeholder",
         },
         {
           id: "dropout",
           title: "Dimension 20 Animated",
           category: "Illustrations & Animation",
           image: "/assets/dropout/thumbnail.png",
+          summary: "placeholder placeholder placeholder",
         },
         {
           id: "trekalert",
           title: "TrekAlert",
           category: "UI/UX Design",
           image: "/assets/me.png",
+          summary: "placeholder placeholder placeholder",
         },
         // {
         //   id: "horrorescape",
@@ -85,9 +92,10 @@ export default {
         // },
         {
           id: "freelance",
-          title: "Freelance Illustrations & Storyboards",
+          title: "Freelance Illustrations",
           category: "Illustrations & Animation",
           image: "/assets/freelance/thumbnail.png",
+          summary: "placeholder placeholder placeholder",
         },
       ],
       filteredProjects: [],
