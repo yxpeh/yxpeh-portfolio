@@ -2,11 +2,11 @@
   <div class="content">
     <div class="banner">
       <div class="summary">
-        <h1>Glompa</h1>
+        <h1>Stick 'Em Dojo</h1>
         <div class="skills">
-          <h3>Role: <br />Game Designer</h3>
+          <h3>Role: <br />UI/UX Designer</h3>
           <div class="divider-vert"></div>
-          <h3>Tools used: <br />Figma, Unity</h3>
+          <h3>Tools used: <br />Figma, React.js, Tailwind</h3>
         </div>
       </div>
     </div>
@@ -15,29 +15,41 @@
       <h2>Overview</h2>
       <p>placeholder placeholder placeholder</p>
       <div class="divider-hor"></div>
-      <!-- Level Design -->
-      <h2>Level Design</h2>
+      <!-- problem statement -->
+      <h2>What's the problem?</h2>
       <p>placeholder placeholder placeholder</p>
       <div class="divider-hor"></div>
-      <!-- Mechanics -->
-      <h2>Mechanic Design</h2>
+      <!-- our users -->
+      <h2>Our users</h2>
       <p>placeholder placeholder placeholder</p>
       <div class="divider-hor"></div>
-      <!-- Tourneys -->
-      <h2>Tournaments and Ranking system</h2>
+      <!-- Reasearch -->
+      <h2>Some research before we start...</h2>
+      <p>placeholder placeholder placeholder</p>
+      <div class="divider-hor"></div>
+      <h2>Our proposed solution:</h2>
       <p>placeholder placeholder placeholder</p>
       <div class="divider-hor"></div>
       <!-- Player Profile -->
-      <h2>Player Profile</h2>
+      <h2>User testing</h2>
       <p>placeholder placeholder placeholder</p>
+      <div class="divider-hor"></div>
+
+      <h2>What can we do?</h2>
+      <p>placeholder placeholder placeholder</p>
+      <div class="divider-hor"></div>
+
+      <h2>What we are at now...</h2>
+      <p>placeholder placeholder placeholder</p>
+      <div class="divider-hor"></div>
 
       <!-- <h2>subtitle</h2>
-        <p>
-          contentonakjsdfnkasldjfn <br />
-          sdalkfh
-        </p>
-        <div class="divider-hor"></div>
-        <img src="/assets/site-logo.svg" class="image" /> -->
+      <p>
+        contentonakjsdfnkasldjfn <br />
+        sdalkfh
+      </p>
+      <div class="divider-hor"></div>
+      <img src="/assets/site-logo.svg" class="image" /> -->
     </div>
     <SeeOthers />
   </div>

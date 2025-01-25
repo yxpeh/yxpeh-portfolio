@@ -63,7 +63,7 @@ export default {
   border: 2px solid #f0e7da;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
-  overflow: hidden;
+
   transition: transform 0.3s ease;
 }
 
@@ -75,6 +75,11 @@ export default {
   height: 425px;
   background-color: orange;
   margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.1) rotateZ(2.5deg);
 }
 .project-info {
   position: absolute;

@@ -2,7 +2,7 @@
   <div class="content">
     <div class="banner">
       <div class="summary">
-        <h1>Glompa</h1>
+        <h1>Recoded</h1>
         <div class="skills">
           <h3>Role: <br />Game Designer</h3>
           <div class="divider-vert"></div>
@@ -32,12 +32,12 @@
       <p>placeholder placeholder placeholder</p>
 
       <!-- <h2>subtitle</h2>
-        <p>
-          contentonakjsdfnkasldjfn <br />
-          sdalkfh
-        </p>
-        <div class="divider-hor"></div>
-        <img src="/assets/site-logo.svg" class="image" /> -->
+      <p>
+        contentonakjsdfnkasldjfn <br />
+        sdalkfh
+      </p>
+      <div class="divider-hor"></div>
+      <img src="/assets/site-logo.svg" class="image" /> -->
     </div>
     <SeeOthers />
   </div>

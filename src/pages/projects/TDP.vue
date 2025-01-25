@@ -2,11 +2,11 @@
   <div class="content">
     <div class="banner">
       <div class="summary">
-        <h1>Glompa</h1>
+        <h1>The Doodle People</h1>
         <div class="skills">
-          <h3>Role: <br />Game Designer</h3>
+          <h3>Role: <br />Creative Technologist</h3>
           <div class="divider-vert"></div>
-          <h3>Tools used: <br />Figma, Unity</h3>
+          <h3>Tools used: <br />Unity, Adobe Suite</h3>
         </div>
       </div>
     </div>
@@ -15,29 +15,25 @@
       <h2>Overview</h2>
       <p>placeholder placeholder placeholder</p>
       <div class="divider-hor"></div>
-      <!-- Level Design -->
-      <h2>Level Design</h2>
+      <!-- client info and requests -->
+      <h2>TOLL Group</h2>
       <p>placeholder placeholder placeholder</p>
       <div class="divider-hor"></div>
-      <!-- Mechanics -->
-      <h2>Mechanic Design</h2>
+      <!-- ideation -->
+      <h2>Ideation</h2>
       <p>placeholder placeholder placeholder</p>
       <div class="divider-hor"></div>
-      <!-- Tourneys -->
-      <h2>Tournaments and Ranking system</h2>
-      <p>placeholder placeholder placeholder</p>
-      <div class="divider-hor"></div>
-      <!-- Player Profile -->
-      <h2>Player Profile</h2>
+      <!-- final-->
+      <h2>Final Product</h2>
       <p>placeholder placeholder placeholder</p>
 
       <!-- <h2>subtitle</h2>
-        <p>
-          contentonakjsdfnkasldjfn <br />
-          sdalkfh
-        </p>
-        <div class="divider-hor"></div>
-        <img src="/assets/site-logo.svg" class="image" /> -->
+      <p>
+        contentonakjsdfnkasldjfn <br />
+        sdalkfh
+      </p>
+      <div class="divider-hor"></div>
+      <img src="/assets/site-logo.svg" class="image" /> -->
     </div>
     <SeeOthers />
   </div>
@@ -79,7 +75,7 @@ export default {
 
 .summary {
   position: absolute;
-  right: 5%;
+  right: 10%;
   width: 40%;
   height: 100%;
   display: flex;

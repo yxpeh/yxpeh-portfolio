@@ -2,33 +2,25 @@
   <div class="content">
     <div class="banner">
       <div class="summary">
-        <h1>Glompa</h1>
+        <h1>Freelance Illustrator</h1>
         <div class="skills">
-          <h3>Role: <br />Game Designer</h3>
+          <h3>Role: <br />Illustrator, Animator, Storyboard Artist</h3>
           <div class="divider-vert"></div>
-          <h3>Tools used: <br />Figma, Unity</h3>
+          <h3>Tools used: <br />Adobe suite, Procreate</h3>
         </div>
       </div>
     </div>
     <div class="details">
       <!-- overview -->
-      <h2>Overview</h2>
+      <h2>What do I do?</h2>
       <p>placeholder placeholder placeholder</p>
       <div class="divider-hor"></div>
-      <!-- Level Design -->
-      <h2>Level Design</h2>
+      <!-- Process -->
+      <h2>Illustrations</h2>
       <p>placeholder placeholder placeholder</p>
       <div class="divider-hor"></div>
-      <!-- Mechanics -->
-      <h2>Mechanic Design</h2>
-      <p>placeholder placeholder placeholder</p>
-      <div class="divider-hor"></div>
-      <!-- Tourneys -->
-      <h2>Tournaments and Ranking system</h2>
-      <p>placeholder placeholder placeholder</p>
-      <div class="divider-hor"></div>
-      <!-- Player Profile -->
-      <h2>Player Profile</h2>
+      <!-- Final -->
+      <h2>Animatics</h2>
       <p>placeholder placeholder placeholder</p>
 
       <!-- <h2>subtitle</h2>
@@ -79,7 +71,7 @@ export default {
 
 .summary {
   position: absolute;
-  right: 5%;
+  right: 10%;
   width: 40%;
   height: 100%;
   display: flex;
@@ -89,7 +81,7 @@ export default {
 }
 .summary h1 {
   color: white;
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 5px;
   font-family: "InstrumentSans-Med";
 }

@@ -1,13 +1,16 @@
 <template>
-  <div>
+  <KeepAlive>
     <Heya />
-  </div>
+  </KeepAlive>
+  <BriefIntro />
 
   <div class="portfolio-page">
-    <ClickCategory
-      :activeCategory="selectedCategory"
-      @category-selected="filterProjects"
-    />
+    <KeepAlive>
+      <ClickCategory
+        :activeCategory="selectedCategory"
+        @category-selected="filterProjects"
+      />
+    </KeepAlive>
     <div class="projects">
       <button class="nav-button" @click="prevCard">◀</button>
 
@@ -32,79 +35,18 @@
 
 <script>
 import Heya from "../components/Heya.vue";
+import BriefIntro from "../components/BriefIntro.vue";
 import ClickCategory from "../components/ClickCategory.vue";
 import ProjectCard from "../components/ProjectCard.vue";
+import { ProjectData } from "../ProjectData.js";
 
 export default {
-  components: { Heya, ClickCategory, ProjectCard },
+  components: { Heya, ClickCategory, ProjectCard, BriefIntro },
   data() {
     return {
       selectedCategory: "all",
       activeIndex: 0,
-      projects: [
-        {
-          id: "glompa",
-          title: "Recoded, Singapore",
-          category: "Game Development",
-          image: "/assets/glompa/thumbnail.png",
-          summary:
-            "As a Game Designer Intern, I had the chance to design features like tournament systems, user profiles, and exciting new levels for Glompa!",
-        },
-        {
-          id: "tdp",
-          title: "The Doodle People, Singapore",
-          category: "Game Development",
-          image: "/assets/tdp/thumbnail.png",
-          summary:
-            "This internship allowed me to explore technical art, graphics programming, and bring VR experiences and interactive exhibits to life!",
-        },
-        {
-          id: "sph",
-          title: "SPH Media, Singapore",
-          category: "Illustrations & Animation",
-          image: "/assets/sph/thumbnail.png",
-          summary:
-            "As a Graphic Designer intern, I helped create rotater thumnails, infographics, illustrations, and even published my very own comic strip!",
-        },
-        {
-          id: "stickem",
-          title: "Stick 'Em, Singapore",
-          category: "UI/UX Design",
-          image: "/assets/stickem/thumbnail.png",
-          summary:
-            "We created Stick 'Em Dojo' to make learning fun and self-directed, designed to work alongside Stick 'Em's STEAM education kits!",
-        },
-        {
-          id: "dropout",
-          title: "Dimension 20 Animated",
-          category: "Illustrations & Animation",
-          image: "/assets/dropout/thumbnail.png",
-          summary:
-            "What began as a fan animation grew into the opportunity to create an official clip for Dropout's Dimension 20 Animated Series!",
-        },
-        {
-          id: "trekalert",
-          title: "TrekAlert",
-          category: "UI/UX Design",
-          image: "/assets/trekalert/thumbnail.png",
-          summary:
-            "A project dedicated to helping hikers stay safe and informed with timely alerts about trail conditions, weather, and more!",
-        },
-        // {
-        //   id: "horrorescape",
-        //   title: "Deep Space Breach",
-        //   category: "Game Development",
-        //   image: "/assets/horrorescape/thumbnail.png",
-        // },
-        {
-          id: "freelance",
-          title: "Freelance Illustrations",
-          category: "Illustrations & Animation",
-          image: "/assets/freelance/thumbnail.png",
-          summary:
-            "I help my clients illustrate characters, posters, concept art, animatics, or whatever helps them bring their story to life!",
-        },
-      ],
+      projects: ProjectData,
       filteredProjects: [],
     };
   },
@@ -168,7 +110,7 @@ export default {
   width: 100%;
   height: 500px;
   perspective: 1000px;
-  margin-top: 20px;
+  margin: 20px 0 50px 0;
 }
 
 .wrapper {
