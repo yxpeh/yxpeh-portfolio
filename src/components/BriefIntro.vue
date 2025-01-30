@@ -2,12 +2,13 @@
   <div class="click-category">
     <div class="speech-bubble">
       <p class="speech">
-        I’m an aspiring games and digital designer eager to contribute my
+        I’m an aspiring games and digital designer, eager to contribute my
         skills<br />
         in both technical development and artistic design.
       </p>
     </div>
     <div class="avatar">
+      <div class="circle"></div>
       <img src="/assets/brief-intro.png" alt="Avatar" class="avatar-icon" />
     </div>
   </div>
@@ -27,20 +28,33 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin: 0 0 20px 0;
+  margin: -55px 0 -20px 0;
 }
 
 .avatar {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 15px;
+  border-bottom-right-radius: 60px;
+  overflow: hidden;
+}
+.circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 30%;
+  background-color: #ffc955;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .avatar-icon {
   width: 200px;
   height: 250px;
-  border-bottom-right-radius: 60px;
+
   object-fit: contain;
+  z-index: 2;
 }
 .speech-bubble {
   width: 900px;

@@ -14,19 +14,17 @@
     <div class="projects">
       <button class="nav-button" @click="prevCard">◀</button>
 
-      <div class="gallery">
-        <div class="wrapper">
-          <ProjectCard
-            v-for="(currentProject, index) in filteredProjects"
-            :key="currentProject.id"
-            :title="currentProject.title"
-            :image="currentProject.image"
-            :projectId="currentProject.id"
-            :summary="currentProject.summary"
-            :category="currentProject.category"
-            :class="getCardClass(index)"
-          />
-        </div>
+      <div class="gallery" ref="gallery" @wheel.prevent="handleScroll">
+        <ProjectCard
+          v-for="(currentProject, index) in filteredProjects"
+          :key="currentProject.id"
+          :title="currentProject.title"
+          :image="currentProject.image"
+          :projectId="currentProject.id"
+          :summary="currentProject.summary"
+          :category="currentProject.category"
+          :class="getCardClass(index)"
+        />
       </div>
       <button class="nav-button" @click="nextCard">▶</button>
     </div>
@@ -37,7 +35,7 @@
 import Heya from "../components/Heya.vue";
 import BriefIntro from "../components/BriefIntro.vue";
 import ClickCategory from "../components/ClickCategory.vue";
-import ProjectCard from "../components/ProjectCard.vue";
+import ProjectCard from "../components/ProjectCardNew.vue";
 import { ProjectData } from "../ProjectData.js";
 
 export default {
@@ -71,13 +69,18 @@ export default {
         );
       }
     },
+    handleScroll(event) {
+      const gallery = this.$refs.gallery;
+      const scrollAmount = event.deltaY * 4;
+      gallery.scrollLeft += scrollAmount;
+    },
     nextCard() {
-      this.activeIndex = (this.activeIndex + 1) % this.filteredProjects.length;
+      const gallery = this.$refs.gallery;
+      gallery.scrollLeft += 350;
     },
     prevCard() {
-      this.activeIndex =
-        (this.activeIndex - 1 + this.filteredProjects.length) %
-        this.filteredProjects.length;
+      const gallery = this.$refs.gallery;
+      gallery.scrollLeft -= 350;
     },
     getCardClass(index) {
       if (index === this.activeIndex) return "active";
@@ -100,30 +103,38 @@ export default {
   width: 75%;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: auto;
 }
 .gallery {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 500px;
+  height: 800px;
+  overflow-x: scroll;
+  overflow-y: hidden;
   perspective: 1000px;
-  margin: 20px 0 50px 0;
+  margin: 20px auto 20px auto;
+  scrollbar-width: thin;
+  scrollbar-color: #d6d6d6 white;
+  scroll-behavior: smooth;
 }
 
-.wrapper {
+/* .wrapper {
   display: flex;
+  flex-direction: row;
   width: 100%;
-  height: 500px;
-}
+  height: 650px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+} */
 
-.wrapper > .active {
+/* ..wrapper > .active {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: rotateZ(-2.5deg) translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 3;
 }
 
@@ -131,7 +142,7 @@ export default {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: rotateY(60deg) translate(-55%, -50%) scale(0.9); /* Slightly less rotation */
+  transform: rotateY(60deg) translate(-55%, -50%) scale(0.9); 
   transition: transform 0.6s ease, z-index 0.6s ease;
   z-index: 2;
 }
@@ -140,10 +151,10 @@ export default {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: rotateY(-60deg) translate(-40%, -50%) scale(0.9); /* Slightly less rotation */
+  transform: rotateY(-60deg) translate(-40%, -50%) scale(0.9); 
   transition: transform 0.6s ease, z-index 0.6s ease;
   z-index: 2;
-}
+} */
 
 .nav-button {
   font-family: "InstrumentSans-Reg";

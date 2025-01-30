@@ -10,23 +10,226 @@
         </div>
       </div>
     </div>
+    <div class="shortcuts">
+      <p>Skip to:</p>
+      <a href="#ideation" class="shortcut-link">Ideation</a>
+      <a href="#final" class="shortcut-link">Final Product</a>
+    </div>
     <div class="details">
       <!-- overview -->
       <h2>Overview</h2>
-      <p>placeholder placeholder placeholder</p>
+      <p>
+        During my time as a Creative Technologist Intern with The Doodle People
+        in June, 2023, I had the opportunity to delve into technical art, game
+        development and design. I worked on both the studio's original projects
+        and client-requested initiatives. The most significant of these was the
+        TOLL Omniverse, a virtual exhibit designed to showcase the workflow and
+        logistics of the TOLL Group.
+      </p>
+      <p>
+        For this project, I was responsible for designing the exhibit’s main
+        flow, gameplay mechanics and UI, creating immersive environments, and
+        developing animations and visual effects. Additionally, I implemented
+        the logic for player interactions in Unity and Spatial.io, ensuring a
+        seamless and engaging user experience.
+      </p>
       <div class="divider-hor"></div>
       <!-- client info and requests -->
       <h2>TOLL Group</h2>
-      <p>placeholder placeholder placeholder</p>
+      <p>
+        Toll Group is a leading logistics and transportation company
+        headquartered in Melbourne, Australia. Renowned for their expertise in
+        supply chain solutions, they provide a wide range of services, including
+        freight, warehousing, and distribution, catering to clients across
+        various industries worldwide.
+      </p>
+      <p>
+        During my internship, The Doodle People were approached by Toll Group to
+        collaborate on an ambitious project. The goal was to showcase the future
+        of logistics and highlight Toll Group's commitment to innovation through
+        a series of interactive stations and experiences. Thus, we were tasked
+        with creating an accessible and user-friendly virtual world to
+        complement their physical exhibition, enabling the company to engage
+        audiences on a global scale.
+      </p>
       <div class="divider-hor"></div>
       <!-- ideation -->
-      <h2>Ideation</h2>
-      <p>placeholder placeholder placeholder</p>
+      <h2 id="ideation">Ideation</h2>
+      <p>
+        To emphasize Toll Group's innovative and future-ready mindset, we
+        decided to set the exhibit in a sci-fi environment. The goal was to
+        emulate a futuristic space hub with a clean, professional aesthetic that
+        aligned with their forward-thinking vision.
+      </p>
+      <p>---inspiration images here---</p>
+      <p>
+        We also divided the exhibit into four distinct hubs, each highlighting a
+        crucial aspect of Toll Group's workflow. These included: the Autonomous
+        Zone, showcasing their automated logistics solutions; the Communication
+        Hub, emphasizing their extensive communication and oversight
+        capabilities; the Omnichannel Exhibit, demonstrating their expertise in
+        managing logistics across multiple supply chain channels; and the
+        Sustainability Zone, highlighting their commitment to achieving
+        sustainable development goals.
+      </p>
+      <p>---zone sketches here-----</p>
+      <p>
+        All four zones are connected through the Innovation Hub, where players
+        begin their journey through the exhibit. From this central hub, they can
+        access any of the four zones in whichever order they prefer. This design
+        ensures that participants can explore the exhibit at their own pace!
+      </p>
+      <p>---hub sketch here---</p>
+      <p>
+        The hub is also where players are introduced to Tomirai, Toll Group's
+        friendly AI assistant and mascot! Tomirai serves as the guide throughout
+        the exhibit, offering helpful information and ensuring a smooth and
+        engaging experience for users as they explore each zone.
+      </p>
+      <p>---tomirai sketch here----</p>
       <div class="divider-hor"></div>
       <!-- final-->
-      <h2>Final Product</h2>
-      <p>placeholder placeholder placeholder</p>
+      <h2 id="final">Final Product</h2>
+      <p>
+        For this project, I concentrated on developing the Innovation Hub, the
+        Autonomous Zone, and the Communication Hub.
+      </p>
 
+      <h3>Innovation Hub</h3>
+      <p>
+        As the central transport hub, the Innovation Hub is the first area
+        players encounter and the space they will return to most frequently.
+        Therefore, we focused on presenting all information succinctly and in an
+        easily understandable manner. Navigation points were designed to be
+        clear and intuitive, guiding players effortlessly to their desired
+        destinations.
+      </p>
+      <p>---innovation hub photo here---</p>
+      <p>
+        Upon first entering, players are greeted by Tomirai, who provides a
+        brief introduction and tutorial to familiarize them with the exhibit and
+        its features:
+      </p>
+      <p>---tomirai image here---</p>
+      <p>
+        After which, players can choose to enter any of the four rooms, each
+        representing a specific area of the exhibit. Each room includes a brief
+        summary of its focus and a teleporter that leads to its respective
+        location.
+      </p>
+      <p>---room photo here---</p>
+
+      <h3>Autonomous Zone</h3>
+      <p>
+        The Autonomous Zone is designed as a futuristic warehouse, showcasing a
+        variety of advanced robots that efficiently handle tasks such as
+        organizing, overseeing, and transporting goods.
+      </p>
+      <p>---insert autonomous zone photo here---</p>
+      <p>
+        The player begins in an empty warehouse, where they are prompted to
+        participate in a mini-game. In this game, they must select the
+        appropriate automation tool for a specified task, after being given a
+        brief summary of each robot's functionality. This interactive experience
+        helps players internalize the different robot types and understand their
+        roles within an automated warehouse setting.
+      </p>
+      <p>---mcq pedestal and stuff here----</p>
+      <p>
+        Since this is an exhibition, there’s no need to worry about making the
+        "right" choices. The goal is simply to enjoy the experience! If players
+        happen to make a mistake, Tomirai is designed to swoop in and correct
+        them, ensuring that the exhibit continues smoothly and without hassle.
+      </p>
+      <p>
+        Once the mini-game is completed, players "install" the robots they’ve
+        chosen, transforming the warehouse from a quiet, empty space into a
+        bustling hub of activity. The once-static environment comes to life,
+        showcasing the efficiency of Toll Group's automated solutions and
+        highlighting the stark contrast between the initial state and the fully
+        operational warehouse.
+      </p>
+      <p>---automation gif here i guess---</p>
+      <p>
+        The player is free to roam the warehouse, observing the fully animated
+        robots as they carry out their tasks. Each robot is accompanied by a
+        brief description explaining its function. All robots are animated to
+        work in perfect harmony, seamlessly transporting boxes, sorting them,
+        and performing other tasks, creating a dynamic and efficient environment
+        that showcases the power of automation!
+      </p>
+      <p>----gif here ig----</p>
+      <p>
+        Players can also choose to proceed to the second level of the warehouse,
+        where they’ll have the opportunity to witness a drone inspecting shelves
+        at their command.
+      </p>
+      <p>---drone pic here---</p>
+
+      <h3>Communication Hub</h3>
+      <p>
+        This zone is designed to highlight the effectiveness of Toll Group's
+        supply chain oversight.
+      </p>
+      <p>
+        I designed the environment to resemble a starship bridge, giving players
+        a sense of control over a vast operation. This setting immerses them in
+        the experience of managing and overseeing a supply chain, allowing them
+        to feel like they're at the helm of something truly significant.
+      </p>
+      <p>----first entry photo here----</p>
+
+      <p>
+        At the very center of the hub is a holographic globe that reflects the
+        real-time status of the global supply chain. However, when the player
+        first enters, they are greeted by a cutscene depicting a global crisis:
+      </p>
+      <p>---red glob photo---</p>
+      <p>
+        The player is then guided through resolving the supply chain issues
+        using Toll Group's solutions, with each solution showcased in a
+        dedicated station throughout the hub. As they navigate these stations,
+        they’ll gain a deeper understanding of how Toll's innovations can
+        address and rectify supply chain disruptions.
+      </p>
+      <p>
+        The first station, the Digital Twin station, demonstrates how warehouses
+        can be optimized through simulations.
+      </p>
+      <p>---digital twin---</p>
+      <p>
+        Next, the ToTRak station highlights how Toll Group helps track product
+        conditions in real time.
+      </p>
+      <p>---totrak---</p>
+
+      <p>
+        Lastly, the Telematics station demonstrates how Toll can detect
+        drowsiness or other issues among the trucks in the supply chain.
+      </p>
+      <p>---telematics----</p>
+
+      <p>
+        All of Toll's solutions are showcased through a smooth and detailed
+        cutscene, ensuring that the information is presented in an easily
+        digestible and engaging way. This immersive experience helps players
+        understand the practical applications of each solution while keeping
+        them captivated throughout!
+      </p>
+
+      <h3>Full Exhbition</h3>
+      <p>You can view the fully completed experience here:</p>
+      <p>--vimeo embed---</p>
+      <h2>Conclusion</h2>
+      <p>
+        This project was my first deep dive into game development and
+        interactive design, and it was an incredibly rewarding experience. The
+        Doodle People gave me the opportunity to explore every facet of the
+        process, from technical implementation to narrative and experience
+        design. I got to contribute to the development of a real-world project
+        that combined creativity, problem-solving, and storytelling. It was a
+        fantastic learning journey, and I absolutely loved being a part of it!
+      </p>
       <!-- <h2>subtitle</h2>
       <p>
         contentonakjsdfnkasldjfn <br />
@@ -35,7 +238,7 @@
       <div class="divider-hor"></div>
       <img src="/assets/site-logo.svg" class="image" /> -->
     </div>
-    <SeeOthers />
+    <SeeOthers current="tdp" />
   </div>
 </template>
 
@@ -106,17 +309,23 @@ export default {
 .details {
   width: 75%;
   margin: auto;
+  margin-top: 50px;
 }
 
 .details h2 {
   font-size: 2rem;
   font-family: "InstrumentSans-Med";
 }
+.details h3 {
+  font-size: 1.25rem;
+  font-family: "InstrumentSans-Med";
+  color: #743800;
+}
 
 .details p {
   font-size: 1.1rem;
   font-family: "InstrumentSans-Reg";
-  line-height: 1.5;
+  line-height: 1.8;
 }
 .divider-hor {
   justify-content: center;
@@ -135,5 +344,48 @@ export default {
 
 .image {
   margin: auto;
+}
+.shortcuts {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 40px;
+}
+.shortcuts p {
+  font-size: 1rem;
+  margin-right: 40px;
+  font-family: "InstrumentSans-Reg";
+  line-height: 1.8;
+}
+
+.shortcut-link {
+  font-family: "InstrumentSans-Reg";
+  position: relative;
+  color: #8c6e61;
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.shortcut-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #f68d2a;
+  transition: width 0.3s ease;
+}
+
+.shortcut-link:hover {
+  color: rgb(46, 28, 21);
+}
+
+.shortcut-link:hover::after {
+  width: 100%;
 }
 </style>

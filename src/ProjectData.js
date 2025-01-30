@@ -2,7 +2,7 @@ export const ProjectData = [
   {
     id: "glompa",
     title: "Recoded, Singapore",
-    category: "Game Development",
+    category: "Game Design",
     image: "/assets/glompa/thumbnail.png",
     summary:
       "As a Game Designer Intern, I had the chance to design features like tournament systems, user profiles, and exciting new levels for Glompa!",
@@ -10,7 +10,7 @@ export const ProjectData = [
   {
     id: "tdp",
     title: "The Doodle People, Singapore",
-    category: "Game Development",
+    category: "Game Design",
     image: "/assets/tdp/thumbnail.png",
     summary:
       "This internship allowed me to explore technical art, graphics programming, and bring VR experiences and interactive exhibits to life!",

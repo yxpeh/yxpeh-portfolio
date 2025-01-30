@@ -50,7 +50,7 @@
       <div class="divider-hor"></div>
       <img src="/assets/site-logo.svg" class="image" /> -->
     </div>
-    <SeeOthers />
+    <SeeOthers current="trekalert" />
   </div>
 </template>
 

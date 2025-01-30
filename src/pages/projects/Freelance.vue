@@ -13,15 +13,45 @@
     <div class="details">
       <!-- overview -->
       <h2>What do I do?</h2>
-      <p>placeholder placeholder placeholder</p>
+      <p>
+        In my free time, I help my clients illustrate and animate their
+        characters and stories, bringing their unique visions to life. I'm
+        grateful to have built a strong base of regular clients who trust me
+        with their creative projects, and it has been incredibly rewarding to
+        work with passionate storytellers and game masters, helping them turn
+        their ideas into something visual and dynamic!
+      </p>
       <div class="divider-hor"></div>
       <!-- Process -->
       <h2>Illustrations</h2>
-      <p>placeholder placeholder placeholder</p>
+      <p>
+        As a freelance illustrator, I help my clients bring their characters to
+        life, whether it's for DnD games, original card games, or character
+        summaries for voice acting roles.
+      </p>
+      <p>---insert character art here---</p>
+      <p>
+        Aside from character designs, my clients also turn to me to create
+        concept art for their fantastical worlds.
+      </p>
+      <p>---insert concept art here----</p>
+      <p>
+        It's always exciting to help turn their ideas into something visual and
+        impactful!
+      </p>
       <div class="divider-hor"></div>
       <!-- Final -->
       <h2>Animatics</h2>
-      <p>placeholder placeholder placeholder</p>
+      <p>
+        I've also been hired by clients to create semi-animated storyboards for
+        a wide range of projects, from showcasing story concepts to
+        complementing voice acting reels!
+      </p>
+      <p>----lucid dreams here-----</p>
+      <p>
+        I'm incredibly grateful that this hobby of mine has turned into a steady
+        stream of projects, keeping me busy and inspired!
+      </p>
 
       <!-- <h2>subtitle</h2>
         <p>
@@ -31,7 +61,7 @@
         <div class="divider-hor"></div>
         <img src="/assets/site-logo.svg" class="image" /> -->
     </div>
-    <SeeOthers />
+    <SeeOthers current="freelance" />
   </div>
 </template>
 
@@ -96,12 +126,13 @@ export default {
 }
 .skills h3 {
   font-size: 0.9rem;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .details {
   width: 75%;
   margin: auto;
+  margin-top: 50px;
 }
 
 .details h2 {
@@ -112,7 +143,7 @@ export default {
 .details p {
   font-size: 1.1rem;
   font-family: "InstrumentSans-Reg";
-  line-height: 1.5;
+  line-height: 1.8;
 }
 .divider-hor {
   justify-content: center;

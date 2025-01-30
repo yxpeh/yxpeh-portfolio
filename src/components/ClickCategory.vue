@@ -1,6 +1,7 @@
 <template>
   <div class="click-category">
     <div class="avatar">
+      <div class="circle"></div>
       <img :src="currentAvatar" alt="Avatar" class="avatar-icon" />
     </div>
     <div class="calltoaction">
@@ -10,18 +11,19 @@
           projects from a certain category, click on a bubble!
         </p>
       </div>
+
       <div class="filter-buttons">
+        <button
+          :class="{ active: activeCategory === 'Game Design' }"
+          @click="selectCategory('Game Design')"
+        >
+          Game Design
+        </button>
         <button
           :class="{ active: activeCategory === 'UI/UX Design' }"
           @click="selectCategory('UI/UX Design')"
         >
           UI/UX Design
-        </button>
-        <button
-          :class="{ active: activeCategory === 'Game Development' }"
-          @click="selectCategory('Game Development')"
-        >
-          Game Development
         </button>
 
         <button
@@ -55,7 +57,7 @@ export default {
     currentAvatar() {
       const avatars = {
         all: "/assets/categories/all.png",
-        "Game Development": "/assets/categories/gamedev-avatar.png",
+        "Game Design": "/assets/categories/gamedev-avatar.png",
         "Illustrations & Animation": "/assets/categories/art-avatar.png",
         "UI/UX Design": "/assets/categories/uiux-avatar.png",
       };
@@ -94,16 +96,27 @@ export default {
 }
 
 .avatar {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 15px;
+  border-bottom-left-radius: 60px;
+  overflow: hidden;
 }
-
+.circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 30%;
+  background-color: #ffc955;
+  border-radius: 50%;
+  z-index: 1;
+}
 .avatar-icon {
   width: 200px;
   height: 250px;
-  border-bottom-left-radius: 60px;
   object-fit: contain;
+  z-index: 2;
 }
 .speech-bubble {
   width: 900px;

@@ -6,8 +6,8 @@
     </div>
   </div>
   <div class="gallery-container" ref="gallery" @wheel.prevent="handleScroll">
-    <div class="gallery-content">
-      <ProjectMini class:="project" v-for="currentProject in projects"
+    <div class="gallery-content" v-for="currentProject in projects">
+      <ProjectMini class:="project" v-if="currentProject.id !== current"
       :key="currentProject.id" :title="currentProject.title"
       :image="currentProject.image" :projectId="currentProject.id"
       :category="currentProject.category" />
@@ -22,6 +22,9 @@ import { ProjectData } from "../ProjectData.js";
 export default {
   components: {
     ProjectMini,
+  },
+  props: {
+    current: { type: String, required: true },
   },
   data() {
     return {

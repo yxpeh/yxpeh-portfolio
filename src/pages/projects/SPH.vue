@@ -13,21 +13,62 @@
     <div class="details">
       <!-- overview -->
       <h2>Overview</h2>
-      <p>placeholder placeholder placeholder</p>
+      <p>
+        As a graphic design intern in Lianhe Zaobao's Digital Media department,
+        I had the opportunity to contribute illustrations and graphics to a
+        variety of platforms, including print, video, and web publications. I
+        also created illustrations for the company's internal publications,
+        ensuring that my work aligned with the editorial vision and helped
+        enhance the overall aesthetic of each project.
+      </p>
       <div class="divider-hor"></div>
       <!-- Infographics -->
       <h2>Infographics</h2>
-      <p>placeholder placeholder placeholder</p>
-      <div class="divider-hor"></div>
-
+      <p>
+        Based on the news stories assigned to me daily, I was responsible for
+        creating infographics that presented the information clearly and
+        succinctly.
+      </p>
+      <p>---inforgraphics here---</p>
       <div class="divider-hor"></div>
       <!-- Illustrations -->
       <h2>Illustrations</h2>
-      <p>placeholder placeholder placeholder</p>
+      <p>
+        I was also tasked with contributing illustrations to the web and digital
+        publications. My main contributions came in the form of illustrated
+        thumbnails for Lianhe Zaobao's web articles, making each story stand
+        out:
+      </p>
+      <p>---thumnails here---</p>
+      <p>
+        I also had the opportunity to illustrate different types of hawker
+        stalls for Lianhe Zaobao's award-winning
+        <a
+          href="https://interactive.zaobao.com/hawker-culture/"
+          class="link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Hawker Culture</a
+        >
+        interactive site, which allowed me to explore different styles and
+        details to bring the vibrant hawker culture to life.
+      </p>
+      <p>---hawker illustrations here---</p>
       <div class="divider-hor"></div>
       <!-- Comique -->
       <h2>Comic Strip</h2>
-      <p>placeholder placeholder placeholder</p>
+      <p>
+        Beyond my internship, I had the chance to publish my very own biweekly
+        comic, <i>F&B Life</i>, which delves into the struggles of a student
+        working as a server in the food and beverage industry. It was a fun and
+        personal project that allowed me to share humorous experiences from
+        working part-time as a student!
+      </p>
+      <p>---insert comic strips here---</p>
+      <p>
+        I am truly grateful for the entire experience, as it allowed me to
+        explore my love for comics and drawing in a professional setting!
+      </p>
 
       <!-- <h2>subtitle</h2>
       <p>
@@ -37,7 +78,7 @@
       <div class="divider-hor"></div>
       <img src="/assets/site-logo.svg" class="image" /> -->
     </div>
-    <SeeOthers />
+    <SeeOthers current="sph" />
   </div>
 </template>
 
@@ -108,6 +149,7 @@ export default {
 .details {
   width: 75%;
   margin: auto;
+  margin-top: 50px;
 }
 
 .details h2 {
@@ -118,7 +160,7 @@ export default {
 .details p {
   font-size: 1.1rem;
   font-family: "InstrumentSans-Reg";
-  line-height: 1.5;
+  line-height: 1.8;
 }
 .divider-hor {
   justify-content: center;
@@ -137,5 +179,31 @@ export default {
 
 .image {
   margin: auto;
+}
+.link {
+  font-family: "InstrumentSans-Med";
+  position: relative;
+  color: #8c6e61;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+.link:hover {
+  color: rgb(46, 28, 21);
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #f68d2a;
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
 }
 </style>

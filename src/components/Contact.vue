@@ -27,7 +27,8 @@
         </div>
       </div>
       <div class="avatar">
-        <img src="/assets/thanks.png" alt="Avatar" class="avatar" />
+        <div class="circle"></div>
+        <img src="/assets/thanks.png" alt="Avatar" class="avatar-img" />
       </div>
     </div>
     <div class="line"></div>
@@ -58,10 +59,19 @@ export default {
   justify-content: center;
 }
 .avatar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: visible;
+}
+.avatar-img {
   width: 200px;
   height: 250px;
   object-fit: contain;
+  z-index: 2;
 }
+
 .speech-bubble {
   width: 900px;
   height: 150px;
@@ -106,7 +116,7 @@ button:hover {
 .line {
   justify-content: center;
   width: 75%;
-  height: 3px;
+  height: 5px;
   background-color: #f39c12;
 }
 </style>
