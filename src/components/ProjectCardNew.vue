@@ -101,7 +101,7 @@ export default {
   background-color: rgb(254, 252, 248);
   position: relative;
   transition: transform 0.3s ease;
-  box-shadow: 3px 3px 5px rgba(149, 149, 149, 0.3);
+  box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.3);
 }
 
 .project-image {

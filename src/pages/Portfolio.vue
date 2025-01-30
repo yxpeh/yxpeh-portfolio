@@ -100,7 +100,7 @@ export default {
   font-style: normal;
 }
 .projects {
-  width: 75%;
+  width: 82%;
   display: flex;
   align-items: center;
   justify-content: center;
