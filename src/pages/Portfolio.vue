@@ -111,7 +111,7 @@ export default {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 800px;
+  height: 700px;
   overflow-x: scroll;
   overflow-y: hidden;
   perspective: 1000px;

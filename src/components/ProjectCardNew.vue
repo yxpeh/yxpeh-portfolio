@@ -70,10 +70,10 @@ export default {
   transform-style: preserve-3d;
   transition: transform 0.3s ease, margin 0.3s ease;
   position: relative;
-  margin: 0 -60px 0 -60px;
+  margin: 0 -90px 0 -60px;
 }
 .wrapper:hover {
-  transform: translateZ(20px) rotateY(5deg);
+  transform: translateZ(20px) rotateY(10deg);
   margin: 0 10px 0 -60px;
 }
 .wrapper:hover .summary {
@@ -83,7 +83,7 @@ export default {
   opacity: 1;
 }
 .spine {
-  height: 675px;
+  height: 600px;
   width: 80px;
   background-color: #edebe8;
   transform: rotateY(-90deg);
@@ -96,8 +96,8 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 675px;
+  width: 350px;
+  height: 600px;
   background-color: rgb(254, 252, 248);
   position: relative;
   transition: transform 0.3s ease;
@@ -108,15 +108,15 @@ export default {
   position: absolute;
   top: 0%;
   left: 0;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   background-color: orange;
   margin-right: 20px;
   transition: transform 0.3s ease;
 }
 .project-info {
   position: absolute;
-  top: 50%;
+  top: 52.5%;
   right: 3%;
   width: 390px;
   height: 425px;
@@ -127,10 +127,10 @@ export default {
 }
 .speech-bubble {
   position: absolute;
-  top: 5%;
-  left: -5%;
+  top: 0%;
+  left: 2%;
   width: 430px;
-  height: 125px;
+  height: 115px;
   background-image: url("/assets/title-speechbubble.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -140,32 +140,32 @@ export default {
 .speech {
   position: absolute;
   top: 18%;
-  left: 14%;
+  left: 17%;
   width: 325px;
   height: 90px;
 }
 
 .project-title {
   font-family: "InstrumentSans-Med";
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 5px;
 }
 .project-category {
   font-family: "InstrumentSans-Med";
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .summary {
   position: absolute;
-  top: 30%;
-  left: 4%;
+  top: 22%;
+  left: 15%;
   height: 125px;
   justify-content: center;
   align-items: center;
   font-family: "InstrumentSans-Reg";
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding: 20px;
   text-align: left;
-  line-height: 2;
+  line-height: 1.8;
   opacity: 0.2;
   transition: opacity 0.3s ease;
 }
@@ -174,7 +174,8 @@ button {
   font-family: "InstrumentSans-Reg";
   font-size: 1.15rem;
   position: absolute;
-  bottom: 25%;
+  bottom: 37.5%;
+  right: 17%;
   background-color: #ffffff;
   border: 2px solid #2e2a28;
   border-radius: 30px;

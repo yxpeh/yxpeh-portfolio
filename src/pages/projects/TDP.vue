@@ -57,13 +57,13 @@
       <h2 id="ideation">Ideation</h2>
       <p>
         To emphasize Toll Group's innovative and future-ready mindset, we
-        decided to set the exhibit in a sci-fi environment. The goal was to
+        decided to set the exhibit in a sci-fi environment. Our goal was to
         emulate a futuristic space hub with a clean, professional aesthetic that
         aligned with their forward-thinking vision.
       </p>
       <p>---inspiration images here---</p>
       <p>
-        We also divided the exhibit into four distinct hubs, each highlighting a
+        We divided the exhibit into four distinct hubs, each highlighting a
         crucial aspect of Toll Group's workflow. These included: the Autonomous
         Zone, showcasing their automated logistics solutions; the Communication
         Hub, emphasizing their extensive communication and oversight
@@ -76,15 +76,15 @@
       <p>
         All four zones are connected through the Innovation Hub, where players
         begin their journey through the exhibit. From this central hub, they can
-        access any of the four zones in whichever order they prefer. This design
-        ensures that participants can explore the exhibit at their own pace!
+        access any of the four zones in whichever order they prefer. Our design
+        ensures that participants can explore the exhibit at their own pace.
       </p>
       <p>---hub sketch here---</p>
       <p>
-        The hub is also where players are introduced to Tomirai, Toll Group's
-        friendly AI assistant and mascot! Tomirai serves as the guide throughout
-        the exhibit, offering helpful information and ensuring a smooth and
-        engaging experience for users as they explore each zone.
+        The hub is also where we introduce Tomirai, Toll Group's friendly AI
+        assistant and mascot! Tomirai serves as the guide throughout the
+        exhibit, offering helpful information and ensuring a smooth and engaging
+        experience for users as they explore each zone.
       </p>
       <p>---tomirai sketch here----</p>
       <div class="divider-hor"></div>
@@ -127,7 +127,7 @@
       </p>
       <p>---insert autonomous zone photo here---</p>
       <p>
-        The player begins in an empty warehouse, where they are prompted to
+        We start players in an empty warehouse, where they are prompted to
         participate in a mini-game. In this game, they must select the
         appropriate automation tool for a specified task, after being given a
         brief summary of each robot's functionality. This interactive experience
@@ -136,10 +136,11 @@
       </p>
       <p>---mcq pedestal and stuff here----</p>
       <p>
-        Since this is an exhibition, there’s no need to worry about making the
-        "right" choices. The goal is simply to enjoy the experience! If players
-        happen to make a mistake, Tomirai is designed to swoop in and correct
-        them, ensuring that the exhibit continues smoothly and without hassle.
+        Since this is an exhibition, we decided there there was no need to
+        enforce making the "right" choices. The goal is simply to enjoy the
+        experience! If players happen to make a mistake, Tomirai is designed to
+        swoop in and correct them, ensuring that the exhibit continues smoothly
+        and without hassle.
       </p>
       <p>
         Once the mini-game is completed, players "install" the robots they’ve
@@ -153,9 +154,9 @@
       <p>
         The player is free to roam the warehouse, observing the fully animated
         robots as they carry out their tasks. Each robot is accompanied by a
-        brief description explaining its function. All robots are animated to
-        work in perfect harmony, seamlessly transporting boxes, sorting them,
-        and performing other tasks, creating a dynamic and efficient environment
+        brief description explaining its function. I animated all robots to work
+        in perfect harmony, seamlessly transporting boxes, sorting them, and
+        performing other tasks, creating a dynamic and efficient environment
         that showcases the power of automation!
       </p>
       <p>----gif here ig----</p>
@@ -182,15 +183,16 @@
       <p>
         At the very center of the hub is a holographic globe that reflects the
         real-time status of the global supply chain. However, when the player
-        first enters, they are greeted by a cutscene depicting a global crisis:
+        first enters, we introduce a cutscene depicting a global crisis:
       </p>
       <p>---red glob photo---</p>
       <p>
         The player is then guided through resolving the supply chain issues
         using Toll Group's solutions, with each solution showcased in a
         dedicated station throughout the hub. As they navigate these stations,
-        they’ll gain a deeper understanding of how Toll's innovations can
-        address and rectify supply chain disruptions.
+        we made sure that they are able to gain a deeper understanding of how
+        Toll's innovations can address and rectify supply chain disruptions
+        through informative animated presentations.
       </p>
       <p>
         The first station, the Digital Twin station, demonstrates how warehouses
@@ -212,9 +214,9 @@
       <p>
         All of Toll's solutions are showcased through a smooth and detailed
         cutscene, ensuring that the information is presented in an easily
-        digestible and engaging way. This immersive experience helps players
-        understand the practical applications of each solution while keeping
-        them captivated throughout!
+        digestible and engaging way. We made sure this immersive experience
+        helps players understand the practical applications of each solution
+        while keeping them captivated throughout!
       </p>
 
       <h3>Full Exhbition</h3>
