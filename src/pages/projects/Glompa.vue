@@ -23,13 +23,12 @@
       <p>
         In August 2024, I joined Recoded as a Game Design Intern, contributing
         to their mobile puzzle game,
-        <!-- prettier-ignore -->
-        <a href="https://play.google.com/store/apps/details?id=com.recoded.monster&hl=en_SG"
+        <a
+          href="https://play.google.com/store/apps/details?id=com.recoded.monster&hl=en_SG"
           class="link"
           target="_blank"
-        rel="noopener noreferrer">Glompa</a
-
-
+          rel="noopener noreferrer"
+          >Glompa</a
         >, which has surpassed 10,000 downloads on the Google Play Store.
         Joining during its early access phase, I had the privilege of shaping
         key foundational elements, including puzzle levels, core mechanics, the
@@ -51,7 +50,7 @@
         tiles, Gerry moves to the final position in the chain, devouring the
         poor Bloblings along the way.
       </p>
-      <p>-----insert gif here--------</p>
+      <img src="/assets/glompa/glompa-intro.gif" />
       <p>
         Add to this unique mechanic a variety of obstacles like bushes to clear,
         ice to crack, and boxes to destroy, and you get an engaging puzzle game
@@ -67,13 +66,13 @@
         avoiding repetition or tedium, striking a balance between strategic
         depth and player enjoyment.
       </p>
-      <p>-----insert compilation photo here------</p>
+      <img src="/assets/glompa/levels.png" />
 
       <p>
         One level I’m particularly proud of is titled “HDB”, currently featured
         as level 297 in the game:
       </p>
-      <p>----insert screenshot here---</p>
+      <img src="/assets/glompa/hdb-ss.png" />
       <p>
         This level incorporates the barrel mechanic, a cascading objective where
         players must link the required number of Bloblings before connecting to
@@ -89,7 +88,7 @@
         initial move to reduce the chances of forming long links in subsequent
         turns.
       </p>
-      <p>---insert bitch play here-----</p>
+      <img src="/assets/glompa/hdb-bad.gif" />
       <p>
         Since the largest-numbered barrel must be cleared first for the smaller
         objectives to cascade downwards into reachable positions, players can
@@ -99,7 +98,7 @@
 
       <p>With that in mind, the intended optimal first move is:</p>
 
-      <p>---insert ideal move here----</p>
+      <img src="/assets/glompa/hdb-good.gif" />
 
       <p>
         Which clears some bushes to create space while preserving a chain of
@@ -129,19 +128,21 @@
         designed with fast implementation in mind, while adding a brand new
         dimension to the gameplay.
       </p>
-      <p>---insert gifs here----</p>
+      <div class="image">
+        <img src="/assets/glompa/nest.gif" />
+        <img src="/assets/glompa/barrel.gif" />
+      </div>
       <p>
         Beyond their in-game behavior, I also carefully considered edge cases
         that could soft-lock players, developing comprehensive design guidelines
         to prevent such scenarios in future levels in order to maintain the
         integrity of the game.
       </p>
-      <p>---insert gdd screenshots here---</p>
       <p>
         However, my most significant contribution was the design of the Conveyor
         Belt and Portal mechanics.
       </p>
-      <p>----insert gif here---</p>
+      <img src="/assets/glompa/cb.gif" />
       <p>
         One of Glompa's standout features is Gerry, whose position on the board
         plays a pivotal role in player strategy. I wanted to introduce a
@@ -153,7 +154,6 @@
         of unpredictability to the level layout, this mechanic significantly
         enhances the game's complexity and strategic depth.
       </p>
-      <p>---insert cb gdd ss here----</p>
 
       <p>
         To complement the Conveyor Belt, I added Portals to address the issue of
@@ -163,13 +163,13 @@
         challenge.
       </p>
 
-      <p>---insert portal gif here</p>
+      <img src="/assets/glompa/portal.gif" />
 
       <p>
         With these Portal and Conveyor Belt mechanics, game designers now have
         more dynamic ways to introduce a variety of challenge types:
       </p>
-      <p>---insert gdd sample levels here---</p>
+      <img src="/assets/glompa/cb-levels.png" />
       <p>
         This simple mechanic has the potential to create a wide range of diverse
         challenges across hundreds of levels, adding much depth and variety to
@@ -184,21 +184,20 @@
         engaged. This event not only provided an ongoing challenge, but also
         offered rewarding incentives for them to perform at their best.
       </p>
-      <p>----insert screenshot here----</p>
+      <img src="/assets/glompa/glompprix.png" />
 
       <p>
         First and foremost, I outlined the key foundational elements of the
         feature, including its active period, unlock conditions, access points,
         UI elements and overall art direction.
       </p>
-      <p>----infographics here i guess-----</p>
       <p>
         I also designed the layout of the tournament leaderboard, which displays
         essential information such as the remaining tournament duration, the
         player's current position, accumulated points, and the rewards they are
         entitled to.
       </p>
-      <p>---screenshot here---</p>
+      <img src="/assets/glompa/leaderboard.png" />
 
       <p>
         Next, it was time to dive into the details. I proposed the system by
@@ -206,7 +205,7 @@
         players proportionally to their achievements while also maintaining a
         level of fairness, so every player has a fighting chance.
       </p>
-      <p>---infographic here---</p>
+      <img src="/assets/glompa/points.png" />
       <p>
         Of course, in any game, players want to compete against others of
         comparable skill levels. To address this, I designed a player injection
@@ -214,7 +213,7 @@
         as much as possible, while also ensuring that players within the same
         pool are at similar points in their game progression.
       </p>
-      <p>----infographic here----</p>
+      <img src="/assets/glompa/poolsys.png" />
 
       <p>
         Lastly, to ensure every player pool is filled, I outlined the behavior
@@ -238,14 +237,13 @@
         cosmetics purchased—all extrapolated from real player data to make the
         bots indistinguishable from actual players.
       </p>
-      <p>---bots vs player infographic----</p>
       <p>
         This, along with the Star Ranking System, where players are ranked based
         on the total number of stars they’ve earned across all released levels,
         fuels friendly competition and motivates players to grind through
         levels, earning their hard-fought bragging rights along the way!
       </p>
-      <p>---podium image here---</p>
+      <img src="/assets/glompa/star.png" />
       <div class="divider-hor"></div>
 
       <!-- Player Profile -->
@@ -259,7 +257,7 @@
         to the rankings and encouraging friendly rivalry—or, in other words, to
         find out exactly who managed to beat them!
       </p>
-      <p>---player profile screenshot----</p>
+      <img src="/assets/glompa/profile.png" />
       <p>
         I defined a pool of player icons, which were designed to be easy for the
         art team to create using existing assets. These icons serve as rewards
@@ -268,7 +266,7 @@
         max-level Glompas (collectible in-game creatures), giving players a fun
         way to flaunt their progress.
       </p>
-      <p>---pfp screenshots---</p>
+      <img src="/assets/glompa/pfp.gif" />
       <p>
         Along with the player icons, I also requested that the art team design
         bold and creative frames to, well, frame them. These eye-catching frames
@@ -277,7 +275,7 @@
         as ideal rewards for tournaments or as exclusive items in paid bundles,
         offering players another way to show off their achievements in style.
       </p>
-      <p>---frame screenshots ----</p>
+      <img src="/assets/glompa/frames.png" />
       <p>
         Next, it was time to bring everything together on the Player Profile
         Page. Here, players' achievements and stats—such as levels cleared and
@@ -287,7 +285,12 @@
         options from a simple color scheme to a vibrant, animated backdrop,
         allowing them to personalize their profile however they like!
       </p>
-      <p>---animated background gifs---</p>
+      <div class="image">
+        <img src="/assets/glompa/bg-1.gif" />
+        <img src="/assets/glompa/bg-2.gif" />
+        <img src="/assets/glompa/bg-3.gif" />
+        <img src="/assets/glompa/bg-4.gif" />
+      </div>
       <div class="divider-hor"></div>
 
       <!-- conclusion -->
@@ -307,7 +310,7 @@
         sdalkfh
       </p>
       <div class="divider-hor"></div>
-      <img src="/assets/site-logo.svg" class="image" /> -->
+       -->
     </div>
     <SeeOthers current="glompa" />
   </div>
@@ -381,6 +384,8 @@ export default {
   width: 75%;
   margin: auto;
   margin-top: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .details h2 {
@@ -409,9 +414,21 @@ export default {
 }
 
 .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 20px;
   margin: auto;
-  max-width: 80%;
 }
+img {
+  display: block;
+  margin: 20px auto 20px auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.3);
+  max-width: 100%;
+}
+
 .link {
   font-family: "InstrumentSans-Med";
   position: relative;
