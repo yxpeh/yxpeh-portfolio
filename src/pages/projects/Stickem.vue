@@ -47,7 +47,7 @@
         featuring a curriculum designed to develop 21st-century skills in a fun
         and engaging way!
       </p>
-      <p>---stick em kit here---</p>
+      <img src="/assets/stickem/stickem-kit.png" />
       <div class="divider-hor"></div>
       <!-- problem statement -->
       <h2 id="problem">What's the problem?</h2>
@@ -56,7 +56,9 @@
         opportunities to schools, their current approach—primarily relying on
         workshops—comes with several limitations.
       </p>
-      <p>---infographic here---</p>
+      <li>Engaging schools are way too slow and can’t scale fast!</li>
+      <li>Only a limited no. of kids are selected for workshops!</li>
+      <li>Many schools still see STEAM as non-essential!</li>
       <p>Therefore, our problem statement asks:</p>
       <p>
         <i
@@ -75,7 +77,7 @@
         socializing and engaging with digital platforms, making them comfortable
         navigating online environments and learning through technology.
       </p>
-      <p>---insert smiling children photo here----</p>
+      <img src="/assets/stickem/them-kids.png" />
       <p>
         We chose to focus on children aged 9 and above, as this is a critical
         stage in their education when curiosity and critical thinking skills
@@ -94,12 +96,12 @@
         Duolingo, renowned for its ability to sustain user engagement through
         gamification and well-designed learning experiences.
       </p>
-      <p>----duolingo owl here----</p>
+      <img src="/assets/stickem/duolingo.png" />
       <p>
         Duolingo effectively leverages both intrinsic and extrinsic motivation
         through its feature design:
       </p>
-      <p>---basically that one slide here ---</p>
+      <img src="/assets/stickem/duo-gamification.png" />
       <p>
         By combining these motivational factors, Duolingo sustains user
         engagement and encourages long-term learning. Therefore, for our initial
@@ -117,12 +119,16 @@
         motivation, features like streaks and rewards will be implemented to
         keep them engaged and motivated throughout their learning journey.
       </p>
-      <p>---stick em dojo banner or something---</p>
+
       <p>
         First, we created various low-fidelity wireframes to visualize potential
         layouts and gather feedback through preference testing.
       </p>
-      <p>---wireframes here----</p>
+      <div class="image">
+        <img src="/assets/stickem/wireframe-1.png" />
+        <img src="/assets/stickem/wireframe-2.png" />
+      </div>
+
       <p>
         After selecting the preferred layout, I studied the brand's aesthetic
         identity to create a consistent design library for the high-fidelity
@@ -130,12 +136,15 @@
         cartoony style that appeals to kids, while staying true to the company's
         core identity.
       </p>
-      <p>---design guidelines here---</p>
+      <img src="/assets/stickem/des-guide.png" />
       <p>
         With the style finalized, I moved on to creating an interactive,
         high-fidelity prototype in Figma.
       </p>
-      <p>---hi fi screenshots here----</p>
+      <div class="image">
+        <img src="/assets/stickem/hifi-1.png" />
+        <img src="/assets/stickem/hifi-2.png" />
+      </div>
       <p>
         Once the prototype was ready, we were set to give it a test run with our
         user base to gather valuable feedback and insights!
@@ -152,7 +161,7 @@
         we observed their interactions and provided guidance only when
         necessary.
       </p>
-      <p>---test session photos here----</p>
+      <img src="/assets/stickem/mod-test.png" />
       <p>
         After the moderated session, we conducted a round of remote user
         testing, where we observed participants' behavior in their own homes.
@@ -160,7 +169,7 @@
         number of challenges completed to gain insights into how the children
         interacted with the platform independently over time.
       </p>
-      <p>---remote submission photos here----</p>
+      <img src="/assets/stickem/remote-sub.png" />
       <p>
         This, combined with a survey conducted after each session, provided us
         with valuable insights into the effectiveness of our solution and helped
@@ -171,7 +180,12 @@
         Throughout our test sessions, we were pleased to find that several
         aspects of our platform performed well:
       </p>
-      <p>---infographic here---</p>
+      <li>The kids found the platform fun, and were actively engaged!</li>
+      <li>
+        Kids were feeding off each other's creativity and inspired each other
+        with their creations!
+      </li>
+      <li>The platform was intuitive and easy for them to use!</li>
       <h3>What didn't?</h3>
       <p>
         Unfortunately, the data collected also revealed some significant
@@ -185,14 +199,14 @@
         This is reflected in the data collected, reflecting each challenge's
         perceived difficulty:
       </p>
-      <p>----graph here----</p>
+      <img src="/assets/stickem/data.png" />
       <p>
         Furthermore, we noticed a significant dip in retention after the first
         few weeks of active use. When surveyed, the most common reason cited was
         the lack of social motivators—children felt they had no one else to
         engage with or compete against, which impacted their continued interest.
       </p>
-      <p>---pie chart here i guess---</p>
+
       <p>
         With these valuable insights, we were able to identify key areas for
         improvement in future development.
@@ -207,14 +221,17 @@
         letting less experienced kids advance at their own pace. Plus, it was a
         fun way to incorporate the karate belt system into our Dojo theme!
       </p>
-      <p>----checkpoint ss----</p>
+      <img src="/assets/stickem/checkpoint.png" />
       <p>
         Recognizing the importance of social elements, we also plan to test a
         showcase feature where users can display their own creations and draw
         inspiration from others. This will foster a sense of community and
         encourage continued engagement through shared creativity.
       </p>
-      <p>----showcase ss----</p>
+      <div class="image">
+        <img src="/assets/stickem/showcase-1.png" />
+        <img src="/assets/stickem/showcase-2.png" />
+      </div>
       <p>
         Future possible features include a tournament system to introduce a
         competitive element, user-created challenges that allow children to
@@ -333,6 +350,12 @@ export default {
   font-family: "InstrumentSans-Reg";
   line-height: 1.8;
 }
+.details li {
+  font-size: 1.1rem;
+  font-family: "InstrumentSans-Reg";
+  line-height: 1.8;
+  margin-left: 50px;
+}
 .divider-hor {
   justify-content: center;
   width: 100%;
@@ -349,7 +372,19 @@ export default {
 }
 
 .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 20px;
   margin: auto;
+}
+img {
+  display: block;
+  margin: 20px auto 20px auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.3);
+  max-width: 100%;
 }
 .link {
   font-family: "InstrumentSans-Med";
