@@ -6,7 +6,7 @@
         <div class="skills">
           <h3>Role: <br />Creative Technologist</h3>
           <div class="divider-vert"></div>
-          <h3>Tools used: <br />Unity, Adobe Suite</h3>
+          <h3>Tools used: <br />Unity, Blender, Adobe Suite</h3>
         </div>
       </div>
     </div>
@@ -14,6 +14,7 @@
       <p>Skip to:</p>
       <a href="#ideation" class="shortcut-link">Ideation</a>
       <a href="#final" class="shortcut-link">Final Product</a>
+      <a href="#video" class="shortcut-link">Full Exhibition</a>
     </div>
     <div class="details">
       <!-- overview -->
@@ -28,7 +29,7 @@
       </p>
       <p>
         For this project, I was responsible for designing the exhibit’s main
-        flow, gameplay mechanics and UI, creating immersive environments, and
+        flow, gameplay mechanics and UI, modelling immersive environments, and
         developing animations and visual effects. Additionally, I implemented
         the logic for player interactions in Unity and Spatial.io, ensuring a
         seamless and engaging user experience.
@@ -61,7 +62,10 @@
         emulate a futuristic space hub with a clean, professional aesthetic that
         aligned with their forward-thinking vision.
       </p>
-      <p>---inspiration images here---</p>
+      <div class="image">
+        <img src="/assets/tdp/inspo-1.png" />
+        <img src="/assets/tdp/inspo-2.png" />
+      </div>
       <p>
         We divided the exhibit into four distinct hubs, each highlighting a
         crucial aspect of Toll Group's workflow. These included: the Autonomous
@@ -72,21 +76,24 @@
         Sustainability Zone, highlighting their commitment to achieving
         sustainable development goals.
       </p>
-      <p>---zone sketches here-----</p>
+      <div class="image">
+        <img src="/assets/tdp/reg-1.png" />
+        <img src="/assets/tdp/reg-2.png" />
+      </div>
       <p>
         All four zones are connected through the Innovation Hub, where players
         begin their journey through the exhibit. From this central hub, they can
         access any of the four zones in whichever order they prefer. Our design
         ensures that participants can explore the exhibit at their own pace.
       </p>
-      <p>---hub sketch here---</p>
+      <img src="/assets/tdp/hub-sketch.png" />
       <p>
         The hub is also where we introduce Tomirai, Toll Group's friendly AI
         assistant and mascot! Tomirai serves as the guide throughout the
         exhibit, offering helpful information and ensuring a smooth and engaging
         experience for users as they explore each zone.
       </p>
-      <p>---tomirai sketch here----</p>
+      <img src="/assets/tdp/tomirai.png" />
       <div class="divider-hor"></div>
       <!-- final-->
       <h2 id="final">Final Product</h2>
@@ -104,20 +111,19 @@
         clear and intuitive, guiding players effortlessly to their desired
         destinations.
       </p>
-      <p>---innovation hub photo here---</p>
+      <img src="/assets/tdp/hub-ss.png" />
       <p>
         Upon first entering, players are greeted by Tomirai, who provides a
         brief introduction and tutorial to familiarize them with the exhibit and
         its features:
       </p>
-      <p>---tomirai image here---</p>
+      <img src="/assets/tdp/tomirai-intro.png" />
       <p>
         After which, players can choose to enter any of the four rooms, each
         representing a specific area of the exhibit. Each room includes a brief
         summary of its focus and a teleporter that leads to its respective
         location.
       </p>
-      <p>---room photo here---</p>
 
       <h3>Autonomous Zone</h3>
       <p>
@@ -125,7 +131,7 @@
         variety of advanced robots that efficiently handle tasks such as
         organizing, overseeing, and transporting goods.
       </p>
-      <p>---insert autonomous zone photo here---</p>
+      <img src="/assets/tdp/warehouse.png" />
       <p>
         We start players in an empty warehouse, where they are prompted to
         participate in a mini-game. In this game, they must select the
@@ -134,7 +140,7 @@
         helps players internalize the different robot types and understand their
         roles within an automated warehouse setting.
       </p>
-      <p>---mcq pedestal and stuff here----</p>
+      <img src="/assets/tdp/pedestal.png" />
       <p>
         Since this is an exhibition, we decided there there was no need to
         enforce making the "right" choices. The goal is simply to enjoy the
@@ -150,7 +156,7 @@
         highlighting the stark contrast between the initial state and the fully
         operational warehouse.
       </p>
-      <p>---automation gif here i guess---</p>
+      <img src="/assets/tdp/riseup.gif" />
       <p>
         The player is free to roam the warehouse, observing the fully animated
         robots as they carry out their tasks. Each robot is accompanied by a
@@ -159,13 +165,12 @@
         performing other tasks, creating a dynamic and efficient environment
         that showcases the power of automation!
       </p>
-      <p>----gif here ig----</p>
       <p>
         Players can also choose to proceed to the second level of the warehouse,
         where they’ll have the opportunity to witness a drone inspecting shelves
         at their command.
       </p>
-      <p>---drone pic here---</p>
+      <img src="/assets/tdp/drone.png" />
 
       <h3>Communication Hub</h3>
       <p>
@@ -178,14 +183,14 @@
         the experience of managing and overseeing a supply chain, allowing them
         to feel like they're at the helm of something truly significant.
       </p>
-      <p>----first entry photo here----</p>
+      <img src="/assets/tdp/cz.png" />
 
       <p>
         At the very center of the hub is a holographic globe that reflects the
         real-time status of the global supply chain. However, when the player
         first enters, we introduce a cutscene depicting a global crisis:
       </p>
-      <p>---red glob photo---</p>
+      <img src="/assets/tdp/redglobe.png" />
       <p>
         The player is then guided through resolving the supply chain issues
         using Toll Group's solutions, with each solution showcased in a
@@ -198,18 +203,18 @@
         The first station, the Digital Twin station, demonstrates how warehouses
         can be optimized through simulations.
       </p>
-      <p>---digital twin---</p>
+      <img src="/assets/tdp/dt.png" />
       <p>
-        Next, the ToTRak station highlights how Toll Group helps track product
+        Next, the ToTrak station highlights how Toll Group helps track product
         conditions in real time.
       </p>
-      <p>---totrak---</p>
+      <img src="/assets/tdp/totrak.png" />
 
       <p>
         Lastly, the Telematics station demonstrates how Toll can detect
         drowsiness or other issues among the trucks in the supply chain.
       </p>
-      <p>---telematics----</p>
+      <img src="/assets/tdp/telematics.png" />
 
       <p>
         All of Toll's solutions are showcased through a smooth and detailed
@@ -219,9 +224,12 @@
         while keeping them captivated throughout!
       </p>
 
-      <h3>Full Exhbition</h3>
+      <h3 id="video">Full Exhbition</h3>
       <p>You can view the fully completed experience here:</p>
-      <p>--vimeo embed---</p>
+      <VimeoPlayer videoId="925777515" />
+      <p></p>
+      <div class="divider-hor"></div>
+      <p></p>
       <h2>Conclusion</h2>
       <p>
         This project was my first deep dive into game development and
@@ -246,10 +254,12 @@
 
 <script>
 import SeeOthers from "../../components/SeeOthers.vue";
+import VimeoPlayer from "../../components/VimeoPlayer.vue";
 
 export default {
   components: {
     SeeOthers,
+    VimeoPlayer,
   },
 };
 </script>
@@ -321,6 +331,7 @@ export default {
 .details h3 {
   font-size: 1.25rem;
   font-family: "InstrumentSans-Med";
+  margin-top: 50px;
   color: #743800;
 }
 
@@ -345,7 +356,19 @@ export default {
 }
 
 .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 20px;
   margin: auto;
+}
+img {
+  display: block;
+  margin: 20px auto 20px auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.3);
+  max-width: 100%;
 }
 .shortcuts {
   padding: 10px;
