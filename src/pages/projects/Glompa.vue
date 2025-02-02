@@ -346,6 +346,10 @@ export default {
   position: relative;
   width: 100%;
   height: 225px;
+  background-image: url("/assets/glompa/banner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #f68d2a;
   margin: 20px 0 10px 0;
 }

@@ -295,13 +295,17 @@ export default {
   position: relative;
   width: 100%;
   height: 225px;
+  background-image: url("/assets/stickem/banner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #f68d2a;
   margin: 20px 0 10px 0;
 }
 
 .summary {
   position: absolute;
-  right: 5%;
+  right: 8%;
   width: 40%;
   height: 100%;
   display: flex;
@@ -310,7 +314,7 @@ export default {
   align-items: center;
 }
 .summary h1 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 3.5rem;
   margin-bottom: 5px;
   font-family: "InstrumentSans-Med";

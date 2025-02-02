@@ -4,6 +4,7 @@ import TemplatePage from "./pages/projects/Template.vue";
 import AboutPage from "./pages/About.vue";
 import Glompa from "./pages/projects/Glompa.vue";
 import TDP from "./pages/projects/TDP.vue";
+import HorrorEscape from "./pages/projects//HorrorEscape.vue";
 import SPH from "./pages/projects/SPH.vue";
 import Stickem from "./pages/projects/Stickem.vue";
 import Dropout from "./pages/projects/Dropout.vue";
@@ -16,6 +17,7 @@ const routes = [
   { path: "/about", name: "About", component: AboutPage },
   { path: "/portfolio/glompa", name: "glompa", component: Glompa },
   { path: "/portfolio/tdp", name: "tdp", component: TDP },
+  { path: "/portfolio/horrorescape", name: "vr", component: HorrorEscape },
   { path: "/portfolio/sph", name: "sph", component: SPH },
   { path: "/portfolio/stickem", name: "stickem", component: Stickem },
   { path: "/portfolio/dropout", name: "dropout", component: Dropout },

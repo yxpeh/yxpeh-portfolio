@@ -15,6 +15,14 @@ export const ProjectData = [
     summary:
       "This internship allowed me to explore technical art, graphics programming, and bring VR experiences and interactive exhibits to life!",
   },
+  // {
+  //   id: "horrorescape",
+  //   title: "Deep Space Breach",
+  //   category: "Game Design",
+  //   image: "/assets/horrorescape/thumbnail.png",
+  //   summary:
+  //     "A VR project designed to deliver an intense horror experience by combining environmental storytelling, immersive gameplay and audio!",
+  // },
   {
     id: "stickem",
     title: "Stick 'Em, Singapore",

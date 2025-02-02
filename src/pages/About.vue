@@ -1,48 +1,47 @@
 <template>
   <div class="about">
     <div class="hello">
-      <div class="circle"></div>
+      <div class="circle1"></div>
+      <div class="circle2"></div>
       <img src="/assets/live-action.jpg" />
-      <div class="speech-bubble">
-        <div class="intro">
-          <p>Heya, I'm Yu Xiang!</p>
+      <div class="details">
+        <div class="speech-bubble">
+          <h3>Heya, I'm Yu Xiang!</h3>
         </div>
+        <p>
+          I’m a soon-to-be graduate from the Singapore University of Technology
+          and Design, where I’m majoring in Computer Science and Design with a
+          focus on visual computing.
+        </p>
+        <p>
+          Storytelling has always been a huge part of my life—whether it’s
+          through comics, movies, video games, or even Broadway musicals. I love
+          bringing ideas to life, and my dream is to combine my technical skills
+          and creativity to create stories and experiences that leave a
+          meaningful impact!
+        </p>
+        <p>
+          When I’m not coding or designing, I’m probably working on my Webcomic,
+          making animatics for my
+          <a
+            href="https://www.youtube.com/@avituses"
+            class="link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >YouTube</a
+          >
+          channel, or just
+          <a
+            href="https://www.instagram.com/avituses/"
+            class="link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >doodling</a
+          >
+          whatever pops into my head. And when I need to clear my mind, I hop on
+          my bike and explore new corners of Singapore!
+        </p>
       </div>
-    </div>
-    <div class="details">
-      <p>
-        I’m a soon-to-be graduate from the Singapore University of Technology
-        and Design, where I’m majoring in Computer Science and Design with a
-        focus on visual computing.
-      </p>
-      <p>
-        Storytelling has always been a huge part of my life—whether it’s through
-        comics, movies, video games, or even Broadway musicals. I love bringing
-        ideas to life, and my dream is to combine my technical skills and
-        creativity to create stories and experiences that leave a meaningful
-        impact!
-      </p>
-      <p>
-        When I’m not coding or designing, I’m probably working on my Webcomic,
-        making animatics for my
-        <a
-          href="https://www.youtube.com/@avituses"
-          class="link"
-          target="_blank"
-          rel="noopener noreferrer"
-          >YouTube</a
-        >
-        channel, or just
-        <a
-          href="https://www.instagram.com/avituses/"
-          class="link"
-          target="_blank"
-          rel="noopener noreferrer"
-          >doodling</a
-        >
-        whatever pops into my head. And when I need to clear my mind, I hop on
-        my bike and explore new corners of Singapore!
-      </p>
     </div>
   </div>
 </template>
@@ -53,8 +52,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 75%;
-  margin: 50px auto;
+  width: 70%;
+  margin: auto;
 }
 
 .hello {
@@ -64,15 +63,40 @@
   justify-content: center;
   perspective: 1000px;
 }
-.circle {
+.circle1 {
   position: absolute;
-  left: 25%;
-  top: 7%;
+  left: 3%;
+  top: 18%;
   width: 350px;
   height: 350px;
   background-color: #ffc955;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   z-index: 1;
+}
+.circle2 {
+  position: absolute;
+  left: 4%;
+  top: 19%;
+  width: 350px;
+  height: 350px;
+  background-color: #ff8528;
+  /* border-radius: 50%; */
+  z-index: 0;
+}
+.speech-bubble {
+  margin-left: -30px;
+  margin-bottom: -30px;
+  width: 200px;
+  height: 50px;
+  background-image: url("/assets/about-speechbubble.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 img {
@@ -85,41 +109,20 @@ img {
   z-index: 2;
 }
 
-.speech-bubble {
-  width: 600px;
-  height: 120px;
-  margin-left: -160px;
-  margin-bottom: 80px;
-  background-image: url("/assets/about-speechbubble.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  z-index: 3;
-}
-
-.intro {
-  font-size: 2.25rem;
-  font-family: "InstrumentSans-Reg";
-  color: #302d2c;
-  padding-bottom: 30px;
-}
-
-.speech-bubble:hover {
-  animation: wiggle 0.5s ease-in-out infinite;
-}
 .details {
-  margin: 50px auto 30px auto;
-  width: 80%;
+  margin: 30px auto 30px auto;
+  width: 50%;
 }
 .details p {
   font-size: 1.1rem;
   font-family: "InstrumentSans-Reg";
-  line-height: 1.8;
+  line-height: 1.5;
+}
+.details h3 {
+  font-size: 1.2rem;
+  font-family: "InstrumentSans-Reg";
+  line-height: 1.5;
+  padding-bottom: 10px;
 }
 .link {
   font-family: "InstrumentSans-Med";
