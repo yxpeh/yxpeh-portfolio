@@ -72,9 +72,9 @@
       </p>
 
       <div class="image">
-        <img src="/assets/dropout/scene-1.gif" />
-        <img src="/assets/dropout/scene-2.gif" />
-        <img src="/assets/dropout/scene-3.gif" />
+        <img src="/assets/dropout/scene-1.gif" style="width: 380px" />
+        <img src="/assets/dropout/scene-2.gif" style="width: 380px" />
+        <img src="/assets/dropout/scene-3.gif" style="width: 380px" />
       </div>
       <div class="image">
         <img src="/assets/dropout/scene-4.gif" />

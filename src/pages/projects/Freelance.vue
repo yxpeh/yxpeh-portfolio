@@ -29,12 +29,12 @@
         life, whether it's for DnD games, original card games, or character
         summaries for voice acting roles.
       </p>
-      <p>---insert character art here---</p>
+      <img src="/assets/freelance/commissions.svg" style="width: 80%" />
       <p>
         Aside from character designs, my clients also turn to me to create
         concept art for their fantastical worlds.
       </p>
-      <p>---insert concept art here----</p>
+      <img src="/assets/freelance/concept-art.png" style="width: 80%" />
       <p>
         It's always exciting to help turn their ideas into something visual and
         impactful!
@@ -47,7 +47,16 @@
         a wide range of projects, from showcasing story concepts to
         complementing voice acting reels!
       </p>
-      <p>----lucid dreams here-----</p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/4Q9Ht_GaT_U?si=G2D7JynGpnq6WQPg"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
       <p>
         I'm incredibly grateful that this hobby of mine has turned into a steady
         stream of projects, keeping me busy and inspired!
@@ -161,6 +170,22 @@ export default {
 }
 
 .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 20px;
+  margin: auto;
+}
+img {
+  display: block;
+  margin: 20px auto 20px auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.3);
+  max-width: 100%;
+}
+iframe {
+  display: block;
   margin: auto;
 }
 </style>

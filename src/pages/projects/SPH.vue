@@ -29,7 +29,11 @@
         creating infographics that presented the information clearly and
         succinctly.
       </p>
-      <p>---inforgraphics here---</p>
+      <div class="image">
+        <img src="/assets/sph/infographic-1.png" style="width: 400px" />
+        <img src="/assets/sph/infographic-2.png" style="width: 400px" />
+        <img src="/assets/sph/infographic-3.png" style="height: 400px" />
+      </div>
       <div class="divider-hor"></div>
       <!-- Illustrations -->
       <h2>Illustrations</h2>
@@ -39,7 +43,11 @@
         thumbnails for Lianhe Zaobao's web articles, making each story stand
         out:
       </p>
-      <p>---thumnails here---</p>
+      <div class="image">
+        <img src="/assets/sph/thumbnail-1.png" style="width: 380px" />
+        <img src="/assets/sph/thumbnail-2.png" style="width: 380px" />
+        <img src="/assets/sph/thumbnail-3.png" style="width: 380px" />
+      </div>
       <p>
         I also had the opportunity to illustrate different types of hawker
         stalls for Lianhe Zaobao's award-winning
@@ -53,7 +61,11 @@
         interactive site, which allowed me to explore different styles and
         details to bring the vibrant hawker culture to life.
       </p>
-      <p>---hawker illustrations here---</p>
+      <div class="image">
+        <img src="/assets/sph/hawker-1.png" style="width: 380px" />
+        <img src="/assets/sph/hawker-2.png" style="width: 380px" />
+        <img src="/assets/sph/hawker-3.png" style="width: 380px" />
+      </div>
       <div class="divider-hor"></div>
       <!-- Comique -->
       <h2>Comic Strip</h2>
@@ -64,7 +76,8 @@
         personal project that allowed me to share humorous experiences from
         working part-time as a student!
       </p>
-      <p>---insert comic strips here---</p>
+      <img src="/assets/sph/comique-1.jpg" />
+      <img src="/assets/sph/comique-2.jpg" />
       <p>
         I am truly grateful for the entire experience, as it allowed me to
         explore my love for comics and drawing in a professional setting!
@@ -178,7 +191,19 @@ export default {
 }
 
 .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 20px;
   margin: auto;
+}
+img {
+  display: block;
+  margin: 20px auto 20px auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.3);
+  max-width: 100%;
 }
 .link {
   font-family: "InstrumentSans-Med";
