@@ -36,7 +36,7 @@
         planning, along with unforeseen circumstances that can arise during the
         hike, such as weather changes or transport cancellations.
       </p>
-      <p>---graph here maybe idk----</p>
+      <img src="/assets/trekalert/survey-res.png" />
       <p>Therefore, our problem statement asks:</p>
       <p>
         <i
@@ -54,7 +54,9 @@
         identify and refine the characteristics of different subsets of our
         target users. This research led to the creation of these user personas:
       </p>
-      <p>---insert user personas here-----</p>
+      <img src="/assets/trekalert/persona-1.png" style="width: 80%" />
+      <img src="/assets/trekalert/persona-2.png" style="width: 80%" />
+      <img src="/assets/trekalert/persona-3.png" style="width: 80%" />
       <div class="divider-hor"></div>
       <!-- Reasearch -->
       <h2>Existing Solutions</h2>
@@ -63,7 +65,10 @@
         identify areas where they excel and areas where they fall short. Our
         primary competitors in this space are AllTrails and Google Maps:
       </p>
-      <p>---competitor analysis chart-----</p>
+      <div class="image">
+        <img src="/assets/trekalert/comp-1.png" style="width: 500px" />
+        <img src="/assets/trekalert/comp-2.png" style="width: 500px" />
+      </div>
       <p>
         With this in mind, we developed a solution aimed at filling the gaps
         left by these products, providing features and functionality that better
@@ -92,12 +97,37 @@
         gather feedback and determine user preferences, helping us finalize the
         direction for the design.
       </p>
-      <p>----different flows here----</p>
+      <p>
+        The first flow centers on a dashboard that presents all relevant
+        information concisely and clearly:
+      </p>
+      <img
+        src="/assets/trekalert/flow-1.png"
+        style="height: 70%; box-shadow: none; margin-top: 50px"
+      />
+      <p>
+        The second flow uses a map to display each notification within its
+        location-specific context:
+      </p>
+      <img
+        src="/assets/trekalert/flow-2.png"
+        style="height: 70%; box-shadow: none; margin-top: 50px"
+      />
+      <p>
+        And the last flow displays each notification in chronological order.
+      </p>
+      <img
+        src="/assets/trekalert/flow-3.png"
+        style="height: 70%; box-shadow: none; margin-top: 50px"
+      />
       <p>
         We also drafted different formats for our out-of-app push notifications
         to determine how users prefer their information to be presented.
       </p>
-      <p>---show diff notifs here----</p>
+      <div class="image">
+        <img src="/assets/trekalert/notif-1.png" />
+        <img src="/assets/trekalert/notif-2.png" />
+      </div>
       <h3>Initial Testing</h3>
       <p>
         We used the low-fidelity prototype for our first round of testing, where
@@ -106,7 +136,7 @@
         to help us understand which design worked best for them.
       </p>
       <p>While the ranking results gave us a clear winner:</p>
-      <p>---ranking results----</p>
+      <img src="/assets/trekalert/ranking.png" />
       <p>
         The scenario testing during the interview stage uncovered some
         interesting insights that we hadn’t expected.
@@ -127,13 +157,13 @@
         dashboard the main page of the app, ensuring it was both easy to
         navigate and packed with the most relevant information for hikers.
       </p>
-      <p>----dashboard photo---</p>
+      <img src="/assets/trekalert/dashboard.svg" style="width: 80%" />
       <p>
         To address the need for a flexible information display, we added a
         3-question survey to the user flow during sign-up. This allows us to
         tailor the information hierarchy based on their preferences.
       </p>
-      <p>----survey questions----</p>
+      <img src="/assets/trekalert/login-survey.png" style="width: 80%" />
       <p>
         In addition, users can update their preferences anytime, giving them
         full control over how the app presents information.
@@ -145,7 +175,7 @@
         recorded the time taken to finish each one. We also asked for their
         satisfaction scores to assess how well the app met their needs.
       </p>
-      <p>---usability testing results----</p>
+
       <p>
         We also conducted another round of in-depth in-person interviews, where
         participants shared their thoughts on their satisfaction with the app.
@@ -177,13 +207,13 @@
         First, we added a feature that provides users with in-depth information
         for specific trails, including hiker reviews, maps, advice, and more!
       </p>
-      <p>---map page---</p>
+      <img src="/assets/trekalert/trail-info.svg" />
       <p>
         From here, users can also join groups heading to the same trail,
         fostering a much-needed community aspect within the app and allowing
         hikers to connect, share experiences, and even plan hikes together.
       </p>
-      <p>---join group page----</p>
+      <img src="/assets/trekalert/social.svg" />
       <p>
         Recognizing its usefulness through the interviews, we decided to
         re-incorporate the map from our low-fidelity prototype as a separate
@@ -191,13 +221,13 @@
         highlighted, making it easier to navigate and stay informed during the
         hike.
       </p>
-      <p>----map page-----</p>
       <p>
         Additionally, users can report their own sightings and alert other
         hikers, ensuring that our notifications are timely, comprehensive, and
         community-driven!
       </p>
-      <p>---report---</p>
+      <img src="/assets/trekalert/map.svg" />
+
       <div class="divider-hor"></div>
 
       <h2 id="final">Final Product</h2>
@@ -208,7 +238,13 @@
         updates, and community engagement. Take a look at the final Figma
         prototype here!
       </p>
-      <p>---figma embed----</p>
+      <iframe
+        style="border: 1px solid rgba(0, 0, 0, 0.1)"
+        width="800"
+        height="800"
+        src="https://embed.figma.com/proto/OOFWMQnjmKUi2Gaol3oUVW/Hi-Fi-Prototype?node-id=73-136&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=73%3A136&show-proto-sidebar=1&embed-host=share"
+        allowfullscreen
+      ></iframe>
 
       <!-- <h2>subtitle</h2>
       <p>
@@ -327,9 +363,20 @@ export default {
   width: 1px;
   background-color: #ffffff;
 }
-
 .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 20px;
   margin: auto;
+}
+img {
+  display: block;
+  margin: 20px auto 20px auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.3);
+  max-width: 100%;
 }
 .shortcuts {
   padding: 10px;
@@ -373,5 +420,9 @@ export default {
 
 .shortcut-link:hover::after {
   width: 100%;
+}
+iframe {
+  display: block;
+  margin: auto;
 }
 </style>

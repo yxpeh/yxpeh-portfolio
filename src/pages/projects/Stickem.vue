@@ -101,7 +101,7 @@
         Duolingo effectively leverages both intrinsic and extrinsic motivation
         through its feature design:
       </p>
-      <img src="/assets/stickem/duo-gamification.png" />
+      <img src="/assets/stickem/duo-gamification.svg" />
       <p>
         By combining these motivational factors, Duolingo sustains user
         engagement and encourages long-term learning. Therefore, for our initial
@@ -136,7 +136,7 @@
         cartoony style that appeals to kids, while staying true to the company's
         core identity.
       </p>
-      <img src="/assets/stickem/des-guide.png" />
+      <img src="/assets/stickem/des-guide.svg" style="width: 70%" />
       <p>
         With the style finalized, I moved on to creating an interactive,
         high-fidelity prototype in Figma.
