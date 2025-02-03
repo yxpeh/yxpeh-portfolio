@@ -292,7 +292,7 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #f68d2a;
+
   margin: 20px 0 10px 0;
 }
 
