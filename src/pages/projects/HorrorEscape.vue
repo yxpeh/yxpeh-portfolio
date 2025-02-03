@@ -58,7 +58,7 @@
 
       <div class="divider-hor"></div>
       <!-- environment design -->
-      <h2 id="environment">Environment</h2>
+      <h2 id="environment">Environment Design</h2>
       <p>
         The research vessel consists of five main areas across two levels, with
         key cards hidden in the Bio Lab, Physics Lab, Chemistry Lab, and Engine
@@ -87,7 +87,7 @@
       <img src="/assets/horrorescape/light-flicker.gif" />
       <div class="divider-hor"></div>
 
-      <h2 id="monster">Monster</h2>
+      <h2 id="monster">Enemy Design</h2>
       <p>
         Before exploring the finer details of gameplay, let’s first examine the
         design of our relentless pursuers:
@@ -157,7 +157,7 @@
       </p>
       <div class="divider-hor"></div>
       <!-- puzzles-->
-      <h2 id="puzzles">Puzzles</h2>
+      <h2 id="puzzles">Puzzle Design</h2>
 
       <p>
         Players must collect all four key cards scattered across the research
@@ -434,6 +434,7 @@ export default {
 .details h2 {
   font-size: 2rem;
   font-family: "InstrumentSans-Med";
+  text-align: center;
 }
 .details h3 {
   font-size: 1.25rem;
@@ -472,7 +473,7 @@ export default {
 }
 img {
   display: block;
-  margin: 20px auto 20px auto;
+  margin: 50px auto 50px auto;
   border-radius: 10px;
   box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.3);
   max-width: 100%;

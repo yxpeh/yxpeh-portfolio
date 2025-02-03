@@ -172,6 +172,7 @@ export default {
 .details h2 {
   font-size: 2rem;
   font-family: "InstrumentSans-Med";
+  text-align: center;
 }
 
 .details p {
@@ -204,7 +205,7 @@ export default {
 }
 img {
   display: block;
-  margin: 20px auto 20px auto;
+  margin: 50px auto 50px auto;
   border-radius: 10px;
   box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.3);
   max-width: 100%;
