@@ -116,6 +116,7 @@ button:hover {
 .line {
   justify-content: center;
   width: 75%;
+  min-width: 1120px;
   height: 5px;
   background-color: #f39c12;
 }

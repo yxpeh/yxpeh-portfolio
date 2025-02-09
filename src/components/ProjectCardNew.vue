@@ -16,9 +16,11 @@
           <p class="summary">
             {{ summary }}
           </p>
-          <button class="see-more" @click="goToProjectPage">
-            Find out more
-          </button>
+          <div class="button_wrapper">
+            <button class="see-more" @click="goToProjectPage">
+              Find out more
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -73,7 +75,7 @@ export default {
   margin: 0 -90px 0 -60px;
 }
 .wrapper:hover {
-  transform: translateZ(20px) rotateY(10deg);
+  transform: rotateY(10deg);
   margin: 0 10px 0 -60px;
 }
 .wrapper:hover .summary {
@@ -171,6 +173,7 @@ export default {
 }
 
 button {
+  perspective: 1000px;
   font-family: "InstrumentSans-Reg";
   font-size: 1.15rem;
   position: absolute;
@@ -183,6 +186,7 @@ button {
   cursor: pointer;
   opacity: 0.2;
   transition: opacity 0.3s ease, background-color 0.3s ease, transform 0.1s ease;
+  z-index: 1;
 }
 
 button:hover {
