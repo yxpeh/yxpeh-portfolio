@@ -86,6 +86,7 @@ export default {
 }
 .gallery-container {
   width: 75%;
+  min-width: 1120px;
   margin: auto;
   display: flex;
   overflow-x: scroll;

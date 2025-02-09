@@ -315,6 +315,7 @@ export default {
 }
 .summary h1 {
   color: rgb(255, 255, 255);
+  white-space: nowrap;
   font-size: 3.5rem;
   margin-bottom: 5px;
   font-family: "InstrumentSans-Med";

@@ -165,12 +165,14 @@ export default {
 }
 .summary h1 {
   color: white;
+  white-space: nowrap;
   font-size: 3rem;
   margin-bottom: 5px;
   font-family: "InstrumentSans-Med";
 }
 .skills {
   color: white;
+
   display: flex;
   justify-content: center;
   align-items: center;

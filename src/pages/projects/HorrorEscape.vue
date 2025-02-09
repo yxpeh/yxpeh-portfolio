@@ -403,9 +403,11 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: visible;
 }
 .summary h1 {
   color: white;
+  white-space: nowrap;
   font-size: 3.5rem;
   margin-bottom: 5px;
   font-family: "InstrumentSans-Med";
