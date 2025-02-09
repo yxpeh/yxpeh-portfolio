@@ -1,9 +1,11 @@
 <template>
   <div class="about">
     <div class="hello">
-      <div class="circle1"></div>
-      <div class="circle2"></div>
-      <img src="/assets/live-action.jpg" />
+      <div class="photo_wrapper">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <img src="/assets/live-action.jpg" />
+      </div>
       <div class="details">
         <div class="speech-bubble">
           <h3>Heya, I'm Yu Xiang!</h3>
@@ -52,8 +54,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 1120px;
   width: 70%;
   margin: auto;
+  padding-top: 5vh;
 }
 
 .hello {
@@ -61,28 +65,43 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.photo_wrapper {
+  width: 400px;
+  height: 400px;
   perspective: 1000px;
+  margin-right: 30px;
 }
 .circle1 {
   position: absolute;
-  left: 3%;
-  top: 18%;
-  width: 350px;
-  height: 350px;
-  background-color: #ffc955;
-  /* border-radius: 50%; */
-  z-index: 1;
-}
-.circle2 {
-  position: absolute;
-  left: 4%;
-  top: 19%;
+  top: 10%;
+  left: 10%;
   width: 350px;
   height: 350px;
   background-color: #ff8528;
-  /* border-radius: 50%; */
+
   z-index: 0;
 }
+.circle2 {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  width: 350px;
+  height: 350px;
+  background-color: #ffc955;
+  z-index: 0;
+}
+img {
+  display: block;
+  border-radius: 5px;
+  border: solid 10px white;
+  box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.3);
+  width: 350px;
+  transform: rotateZ(-2.5deg);
+  z-index: 2;
+}
+
 .speech-bubble {
   margin-left: -30px;
   margin-bottom: -30px;
@@ -99,19 +118,10 @@
   padding: 20px;
 }
 
-img {
-  display: block;
-  border-radius: 5px;
-  border: solid 10px white;
-  box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.3);
-  width: 350px;
-  transform: rotateZ(-2.5deg);
-  z-index: 2;
-}
-
 .details {
-  margin: 30px auto 30px auto;
+  /* margin: 30px auto 30px auto; */
   width: 50%;
+  padding: 40px;
 }
 .details p {
   font-size: 1.1rem;
